@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:padding="10px">
+	<ImageButton android:id="@+id/item_header"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:src="@drawable/header_icon" />
+	<LinearLayout android:layout_weight="1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView android:id="@+id/item_name" android:textColor="#FFfdfdfd"
+			android:textSize="22px" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_marginBottom="6px"/>
+		<TextView android:id="@+id/item_content" android:textColor="#FFffc321"
+			android:textSize="22px" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<TextView android:id="@+id/item_date" android:text="2012-4-28"
+		android:textColor="#FF919191" android:textSize="18px"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

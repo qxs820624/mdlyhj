@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.chuangyu.music"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:padding="10px">
+	<ImageButton android:id="@+id/btn_back"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="@drawable/btn_back_background" />
+	<cn.duome.fotoshare.view.MarqueeTextView
+		android:id="@+id/tv_title" android:text="text" android:singleLine="true"
+		android:ellipsize="marquee" android:marqueeRepeatLimit="marquee_forever"
+		android:layout_weight="1" android:textSize="38px"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:gravity="center" />
+	<ImageButton android:id="@+id/btn_share"
+		android:visibility="gone"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/btn_share_background"/>
+</LinearLayout>

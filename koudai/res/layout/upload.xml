@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.chuangyu.music"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/edit_tile_background">
+	<!-- 皮肤栏 -->
+	<include layout="@layout/include_bg_skin" />
+	<!-- 标题栏 -->
+	<include android:id="@+id/header_panel" layout="@layout/include_header" />
+	<!-- -->
+	<Button android:id="@+id/btn_send" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:background="@drawable/btn_send_background"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true" android:layout_marginBottom="20px" />
+	<!-- -->
+	<RelativeLayout android:layout_above="@id/btn_send"
+		android:layout_below="@id/header_panel" android:background="@drawable/content_background"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_margin="40px" android:orientation="vertical">
+		<LinearLayout android:id="@+id/share_panel"
+			android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="20px">
+			<FrameLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1">
+				<Button android:id="@+id/btn_sina" android:background="@drawable/btn_sina_background"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_gravity="center"></Button>
+			</FrameLayout>
+			<FrameLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1">
+				<Button android:id="@+id/btn_tx" android:background="@drawable/btn_tx_background"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_gravity="center"></Button>
+			</FrameLayout>
+			<FrameLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1">
+				<Button android:id="@+id/btn_kx" android:background="@drawable/btn_kaixin001_background"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_gravity="center"></Button>
+			</FrameLayout>
+			<FrameLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1">
+				<Button android:id="@+id/btn_rr" android:background="@drawable/btn_renren_background"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_gravity="center"></Button>
+			</FrameLayout>
+		</LinearLayout>
+
+		<!-- -->
+		<EditText android:id="@+id/et_desc" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_above="@id/share_panel"
+			android:background="@drawable/edit_input_background" android:lines="4"
+			android:hint="@string/desc_tip" android:layout_marginTop="20px" />
+		<!-- -->
+		<FrameLayout android:id="@+id/map_panel"
+			android:layout_above="@id/et_desc" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="20px">
+			<Button android:id="@+id/btn_map" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:background="@drawable/btn_map_background"
+				android:text="@string/edit_foto" android:textColor="#A0000000" />
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/icon_map"
+				android:layout_gravity="center_vertical|left" android:layout_margin="20px"
+				android:visibility="gone" />
+		</FrameLayout>
+		<!-- -->
+		<ImageView android:id="@+id/iv_thumb" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_above="@id/map_panel"
+			android:scaleType="centerInside"/>
+	</RelativeLayout>
+	<!-- 刷新按钮 -->
+	<Button android:id="@+id/btn_refresh"
+		android:layout_centerInParent="true" android:visibility="gone"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<!-- 网络状态 -->
+	<ProgressBar android:id="@+id/progressImage"
+		android:layout_centerInParent="true" android:visibility="gone"
+		style="@android:style/Widget.ProgressBar.Inverse" mce_style="@android:style/Widget.ProgressBar.Inverse"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<!-- 请求进度 -->
+	<TextView android:id="@+id/progressText" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:visibility="gone" />
+</RelativeLayout>

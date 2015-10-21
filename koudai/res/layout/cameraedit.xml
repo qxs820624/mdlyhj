@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.chuangyu.music"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/edit_tile_background">
+	<!-- 标题栏 -->
+	<include android:id="@+id/title_panel" layout="@layout/include_header" />
+	<!-- 导航栏 -->
+	<LinearLayout android:id="@+id/nav_panel"
+		android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="20px">
+		<FrameLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1">
+			<Button android:background="@drawable/btn_share_background"
+				android:layout_gravity="center" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</FrameLayout>
+		<FrameLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1">
+			<Button android:background="@drawable/btn_cancel_1_background"
+				android:layout_gravity="center" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</FrameLayout>
+		<FrameLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1">
+			<Button android:background="@drawable/btn_edit_background"
+				android:layout_gravity="center" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</FrameLayout>
+		<FrameLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1">
+			<Button android:background="@drawable/btn_camera_1_background"
+				android:layout_gravity="center" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</FrameLayout>
+	</LinearLayout>
+	<!-- -->
+	<ImageView android:id="@+id/iv_camera" android:scaleType="centerInside"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_below="@id/title_panel" android:layout_above="@id/nav_panel" />
+</RelativeLayout>
