@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/play_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top" >
+
+        <TextView
+            android:id="@+id/tv_music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="歌曲标题"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/play_back_imagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_bg" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/sb_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="85dp"
+        android:progress="0"
+        android:progressDrawable="@anim/aexp_bar"
+        android:secondaryProgress="0"
+        android:thumb="@drawable/play_seek_thumb" />
+
+    <Button
+        android:id="@+id/btn_play_or_pasue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/player_btn_play_style" />
+
+    <TextView
+        android:id="@+id/tv_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_music_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="艺术家"
+        android:textColor="#ff844a2b" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_play_or_pasue"
+        android:layout_alignBottom="@+id/btn_play_or_pasue"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/btn_play_or_pasue"
+        android:background="@drawable/player_btn_next_style"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_play_or_pasue"
+        android:layout_alignBottom="@+id/btn_play_or_pasue"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/btn_play_or_pasue"
+        android:background="@drawable/player_btn_last_style"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_last"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/player_btn_down_style" />
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_next"
+        android:layout_alignBottom="@+id/btn_next"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/player_btn_buy_style" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_buy"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:text="00:00:00"
+        android:textColor="#ff844a2b" />
+
+    <TextView
+        android:id="@+id/tv_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_duration"
+        android:layout_alignBottom="@+id/tv_duration"
+        android:layout_alignParentLeft="true"
+        android:text="00:00:00"
+        android:textColor="#ff844a2b" />
+
+</RelativeLayout>

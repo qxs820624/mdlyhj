@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/navigationbackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_focus"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/backnavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/iconbackshowroute" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="创建路线"
+            android:textColor="#fffeed"
+            android:textSize="20dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_toLeftOf="@+id/suresearch"
+        android:layout_toRightOf="@+id/change" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+              android:layout_weight="1"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/end"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/navigationeditetext"
+                android:hint="终点"
+                   android:layout_marginLeft="5dip"
+                android:singleLine="true" >
+            </EditText>          
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/qingkong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/end"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="6dip"
+            android:layout_toLeftOf="@+id/suresearch"
+            android:layout_toRightOf="@+id/end"
+            android:background="@drawable/clean1" />
+    </LinearLayout>
+    
+
+    <com.baidu.mapapi.MapView
+        android:id="@+id/bmapsView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ll2"
+        android:layout_marginTop="3dip"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_toLeftOf="@+id/suresearch"
+        android:layout_toRightOf="@+id/change" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >           
+            <EditText
+                android:id="@+id/start"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/navigationeditetext"
+                android:hint="起点"
+                android:singleLine="true" >
+
+                <requestFocus>
+                </requestFocus>
+            </EditText>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/qingkong"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/suresearch"
+            android:background="@drawable/clean1" />
+    </LinearLayout>
+     <ListView
+                android:id="@+id/suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ll1"
+                android:layout_alignRight="@+id/ll1"
+                android:layout_below="@+id/ll1"
+                 android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/darker_gray"
+                android:cacheColorHint="#00000000"
+                android:visibility="gone" >
+            </ListView>
+              <ListView
+                android:id="@+id/suggestionzd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/ll2"
+                android:layout_alignRight="@id/ll2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/ll2"
+                android:background="@android:color/darker_gray"
+                android:cacheColorHint="#00000000"
+                android:visibility="gone" >
+            </ListView>
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/ll1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/changepressnavigation" >
+    </Button>
+
+    <Button
+        android:id="@+id/suresearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll2"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ll1"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/surebutton1" >
+    </Button>
+
+</RelativeLayout>

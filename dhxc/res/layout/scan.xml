@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:id="@+id/main"
+  android:background="@drawable/background"
+  android:weightSum="1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  >
+  <FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/top"
+     >
+   
+    <ImageButton 
+    android:id="@+id/back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/iconbackshowroute"
+     android:layout_gravity="center_vertical|left"
+     android:layout_marginLeft="15dip"
+    />
+      <TextView android:paddingLeft="60dip"
+     android:paddingRight="60dip"
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:id="@+id/tv"
+    android:textColor="#ffffff"
+    android:textSize="25dip"
+    android:singleLine="true"
+    android:background="#0000"
+    android:ellipsize="marquee" android:focusableInTouchMode="true"
+	marqueeRepeatLimit="marquee_forever" android:focusable="true"
+    />
+    </FrameLayout>
+
+    <GridView android:numColumns="2" android:id="@+id/gv"   android:verticalSpacing="30dip" 
+    android:layout_margin="5dip"  android:gravity="center_horizontal"  android:layout_marginTop="30dip"
+    android:listSelector="@color/transparent"
+     android:layout_width="wrap_content" android:layout_height="390dp"></GridView>
+    <LinearLayout 
+    android:layout_width="fill_parent"   android:gravity="bottom" android:layout_marginTop="10dip"
+    android:layout_height="wrap_content" android:layout_weight="0.19">
+    <Button
+    android:id="@+id/photo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:layout_gravity="left"
+     android:text="照相"
+      android:layout_marginLeft="10dip"
+      android:background="@drawable/buttonpress1"
+    />
+    <Button android:id="@+id/add" 
+    android:text="添加相片"
+    android:layout_width="wrap_content"
+     android:layout_height="wrap_content" 
+ android:background="@drawable/buttonpress1"
+       android:layout_marginLeft="65dip"
+        android:layout_gravity="right"
+   ></Button>
+    </LinearLayout>
+</LinearLayout>
+

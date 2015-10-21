@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/top" >
+
+        <TextView
+            android:id="@+id/tvcomment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20dip" />
+
+        <ImageButton
+            android:id="@+id/backcomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/iconbackshowroute" />
+    </FrameLayout>
+
+    <com.baidu.mapapi.MapView
+        android:layout_below="@+id/fl"
+        android:id="@+id/bdmap"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/commentll"
+        android:layout_height="fill_parent"
+        android:background="@drawable/zhongjian"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/commentll"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/dibull"
+        android:layout_height="250dp" >
+
+        <ListView
+            android:id="@+id/lvcomment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/fristpagebackground"
+            android:cacheColorHint="#00000000"
+            android:divider="#f6dbc0"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dibull"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/sharecomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sharecomment1" />
+
+        <Button
+            android:id="@+id/pingluncomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tianjiapinglun1" />
+
+        <Button
+            android:id="@+id/savecomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/save11" />
+    </LinearLayout>
+
+</RelativeLayout>

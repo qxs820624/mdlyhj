@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:id="@+id/splayout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <FrameLayout android:layout_width="fill_parent"
+		android:layout_height="50dip">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="50dip" android:id="@+id/tv" android:gravity="center"
+			android:text="品味欣赏" android:textColor="#ffffff" android:textSize="20dip"
+			android:background="@drawable/top" />
+		<ImageButton android:id="@+id/backshowpic"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/iconbackshowroute" android:layout_gravity="center_vertical|left"
+			android:layout_marginLeft="10dip" />
+	</FrameLayout>
+		<LinearLayout 
+         android:orientation="vertical"
+         android:layout_width="fill_parent" android:background="#0000"
+         android:gravity="center"
+		 android:layout_height="340dip">
+	<ImageView android:id="@+id/showpic" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="10px"
+		android:layout_gravity="center_horizontal" 
+		android:scaleType="center" />
+	 </LinearLayout>
+	<Gallery android:id="@+id/galleryshowpic" android:layout_width="fill_parent"
+		android:layout_height="160px" 
+		android:spacing="3dip"  android:layout_marginTop="10dip"
+	 />
+</LinearLayout>

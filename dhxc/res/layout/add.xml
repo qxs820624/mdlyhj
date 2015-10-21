@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:weightSum="1"
+  android:background="@drawable/myroutebg"
+  android:id="@+id/layout"
+  >
+  <FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+    <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv"
+    android:gravity="center"
+    android:text="创建相册"
+    android:textColor="#854a2a"
+    android:textSize="20dip"
+    android:background="@drawable/top"
+    />
+    <ImageButton 
+    android:id="@+id/iconback"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/iconbackshowroute"
+     android:layout_gravity="center_vertical|left"
+     android:layout_marginLeft="15dip"
+    />
+    </FrameLayout>
+    <LinearLayout 
+    android:id="@+id/linearLayout_focus" 
+    android:focusable="true" 
+    android:focusableInTouchMode="true" 
+    android:layout_width="0px" 
+    android:layout_height="0px"/> 
+  <EditText
+  android:id="@+id/etzhuti" android:focusable="true"  android:focusableInTouchMode="true"
+    android:layout_width="414px"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="50dip"
+    android:layout_marginTop="15dip"
+    android:background="@drawable/edittextbg"
+    android:hint="请输入主题名称"   
+    android:gravity="center"
+     android:textColor="#390505"   
+    />
+      <EditText
+    android:id="@+id/etadress" android:focusable="true"  android:focusableInTouchMode="true"
+    android:layout_width="414px"
+    android:background="@drawable/edittextbg"
+     android:layout_gravity="center_horizontal"
+     android:layout_marginTop="10dip" 
+     android:gravity="center"
+      android:hint="请输入照片地址"
+    android:textColor="#390505"
+    android:layout_height="50dip"/>
+</LinearLayout>
