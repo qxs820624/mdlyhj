@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/v_topest" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!-- -->
+	<include android:id="@+id/title_panel" layout="@layout/title_bar_market" />
+	<!-- -->
+	<LinearLayout android:id="@+id/detail_top_panel"
+		android:layout_below="@id/title_panel" android:padding="10dip"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/market_manage_downning_bg"
+		android:gravity="center">
+		<ImageView android:id="@+id/iv_detail_icon"
+			android:layout_width="48dip" android:layout_height="48dip"
+			android:src="@drawable/icon_bg" android:layout_marginRight="10dip" />
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1">
+			<TextView android:id="@+id/tv_detail_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="愤怒的小鸟" android:textColor="#FF000000" />
+			<TextView android:id="@+id/tv_detail_info"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="版本：1.5.2" android:textColor="#FFFFFFFF" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/ll_down_panel"
+			android:gravity="center" android:clickable="true"
+			android:orientation="vertical" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/market_detail_down_background" />
+			<TextView android:id="@+id/tv_down_text"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="下载" android:textColor="#FF000000"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<!-- -->
+	<ScrollView android:id="@+id/sv_detail_panel"
+		android:visibility="invisible" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@id/detail_top_panel">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingLeft="10dip" android:paddingRight="10dip"
+				android:paddingTop="6dip">
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:text="软件简介："
+					android:textColor="#FF000000" />
+				<TextView android:id="@+id/tv_detail_desc" android:lines="4"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:text="愤怒小鸟是一款：" android:textColor="#A0000000" />
+				<TextView android:id="@+id/tv_detail_desc_ex"
+					android:paddingTop="6dip"
+					android:gravity="right" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:text=">>全部展开"
+					android:textColor="#FF000000" />
+				<ImageView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/list_divider" />
+				<!-- -->
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:text="截图："
+					android:textColor="#FF000000" />
+				<!-- -->
+				<HorizontalScrollView android:layout_width="fill_parent"
+					android:spacing="4dip" android:layout_height="240dip">
+					<LinearLayout android:id="@+id/scroll_panel_1"
+						android:layout_width="wrap_content" android:layout_height="fill_parent">
+
+					</LinearLayout>
+				</HorizontalScrollView>
+				<!-- -->
+				<TextView android:layout_marginTop="6dip"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:text="该应用程序需要以下权限，请确认后再下载：" android:textColor="#FF000000" />
+				<TextView android:id="@+id/tv_detail_permission"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:text="网络通信" android:textColor="#A0000000" />
+				<ImageView android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:background="@drawable/list_divider" />
+				<!-- -->
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:text="猜你喜欢："
+					android:textColor="#FF000000" />
+				<!-- -->
+				<HorizontalScrollView android:layout_width="fill_parent"
+					android:spacing="4dip" android:layout_height="wrap_content">
+					<LinearLayout android:id="@+id/scroll_panel_2"
+						android:layout_width="wrap_content" android:layout_height="fill_parent">
+
+					</LinearLayout>
+				</HorizontalScrollView>
+
+			</LinearLayout>
+			<!-- -->
+			<TextView android:layout_width="fill_parent"
+				android:padding="6dip" android:background="@drawable/market_detail_bottom_bg"
+				android:gravity="right" android:layout_height="wrap_content"
+				android:text=">>回到顶部" android:textColor="#FF000000" />
+		</LinearLayout>
+	</ScrollView>
+	<!-- -->
+	<FrameLayout android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<include layout="@layout/optionmenu_popup" />
+	</FrameLayout>
+	<!-- 网络状态 -->
+	<ProgressBar android:id="@+id/progressImage"
+		android:layout_centerInParent="true"
+		style="@android:style/Widget.ProgressBar.Inverse" mce_style="@android:style/Widget.ProgressBar.Inverse"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/mobi.domore.mcdonalds"
+	android:id="@+id/ad_panel" android:gravity="center"
+	android:orientation="vertical" android:background="#000000">
+	<!-- -->
+	<com.casee.adsdk.CaseeAdView android:id="@+id/adview"
+		android:layout_width="fill_parent" android:layout_height="48px"
+		android:layout_alignParentBottom="true" app:backgroundColor="#000000"
+		app:textColor="#FFFFFF" app:refreshInterval="30000" app:vertical="false" />
+</LinearLayout>

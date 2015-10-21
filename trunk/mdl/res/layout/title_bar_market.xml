@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/title_panel" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:background="@drawable/title_bar_bg"
+	android:gravity="center_vertical">
+	<!-- logo -->
+	<ImageButton android:id="@+id/btn_home" android:src="@drawable/icon_home"
+		android:background="@android:color/transparent" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginLeft="8dip" />
+	<TextView android:layout_weight="1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<!-- 管理按钮 -->
+	<ImageButton android:id="@+id/btn_admin" android:src="@drawable/icon_admin_normal"
+		android:background="@drawable/nav_background" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<!-- 搜索按钮 -->
+	<ImageButton android:id="@+id/btn_search"
+		android:layout_marginLeft="8dip" android:layout_marginRight="8dip"
+		android:src="@drawable/icon_search_normal" android:background="@drawable/nav_background"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

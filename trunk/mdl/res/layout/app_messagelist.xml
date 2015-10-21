@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/v_topest" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!-- -->
+	<FrameLayout android:id="@+id/title_panel"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<include layout="@layout/title_bar_msg" />
+	</FrameLayout>
+	<!-- -->
+	<FrameLayout android:id="@+id/scroller_"
+		android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<include layout="@layout/ad_panel" />
+	</FrameLayout>
+	<!-- -->
+	<FrameLayout android:layout_above="@id/scroller_"
+		android:visibility="gone" android:id="@+id/nav_panel"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<include layout="@layout/nav_bar" />
+	</FrameLayout>
+	<!-- -->
+	<ListView android:layout_below="@id/title_panel"
+		android:layout_above="@id/scroller_" android:persistentDrawingCache="animation|scrolling"
+		android:layoutAnimation="@anim/list_layout_controller" android:id="@+id/listview"
+		android:divider="@drawable/divider_bg" android:dividerHeight="1dip"
+		android:listSelector="@android:color/transparent"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	</ListView>
+	<ImageView android:id="@+id/gradient_up"
+		android:layout_alignTop="@id/listview" android:background="@drawable/gradient_up"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<ImageView android:layout_alignBottom="@id/listview"
+		android:background="@drawable/gradient_down" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<FrameLayout android:layout_above="@id/nav_panel"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<include layout="@layout/input_search" />
+	</FrameLayout>
+	<!-- 刷新按钮 -->
+	<Button android:id="@+id/btn_refresh" android:background="@drawable/message_nothing"
+		android:layout_centerInParent="true" android:visibility="gone"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

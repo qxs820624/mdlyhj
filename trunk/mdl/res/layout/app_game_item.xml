@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<!-- -->
+	<ImageView android:id="@+id/item_icon" android:gravity="center"
+		android:layout_marginLeft="4dip" android:layout_gravity="center_vertical"
+		android:layout_width="40dip" android:layout_height="40dip" />
+	<!-- -->
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_weight="1" android:padding="6dip" android:orientation="vertical"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<!-- -->
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:id="@+id/item_title" android:text="text"
+				android:layout_weight="1" style="@style/list_item_style_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:id="@+id/item_progress" android:text=""
+				android:textStyle="bold" android:textSize="12dip" android:gravity="center"
+				android:layout_width="wrap_content" android:layout_height="fill_parent" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:gravity="bottom" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<TextView android:id="@+id/item_author"
+				android:paddingRight="6dip" style="@style/list_item_style_subtitle"
+				android:layout_width="wrap_content" android:layout_height="fill_parent" />
+			<TextView android:id="@+id/item_count" style="@style/list_item_style_subtitle"
+				android:layout_width="wrap_content" android:layout_height="fill_parent" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

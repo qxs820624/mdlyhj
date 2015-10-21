@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="color_hei">#ff000000</color>
+    <color name="color_hei_8">#00000000</color>
+    <color name="color_cihei">#ff333333</color>
+    <color name="color_shenhui">#ff999999</color>
+    <color name="color_zhonghui">#ff798089</color>
+    <color name="color_qianhui">#ff888b8d</color>
+    <color name="color_zuiqianhui">#ffb4b4b4</color>
+    <color name="color_bai">#ffffffff</color>
+    <color name="color_item">#fffbf6</color>
+    <color name="color_tou">#0000</color>
+    <color name="color_bai_8">#ffffffff</color>
+    <color name="color_lan">#ff067bb1</color>
+    <color name="color_qianlan">#ffc6e6f9</color>
+    <color name="window_bg">#ffeef1f3</color>
+    <color name="title_bg">#ff54acea</color>
+    <color name="login_background">#ffecf6fb</color>
+    <color name="login_color0">#ffe2e7eb</color>
+    <color name="red">#FFFF0000</color>
+
+    <item name="login_color1" type="color">@color/color_bai</item>
+
+    <color name="nonchat_contact">#ff222222</color>
+    <color name="chat_contact">#ffeeeeee</color>
+    <color name="textfield_unselected">#ffb3cad9</color>
+    <color name="button_unselected">#ff54acea</color>
+    <color name="button_selected">#ff419de4</color>
+
+    <item name="transparent" type="color">@color/color_hei_8</item>
+
+    <color name="scrollbar_tbumb_bg">#ffd5d5d5</color>
+
+    <item name="chat_background" type="color">@color/window_bg</item>
+    <item name="chat_title_bg" type="color">@color/title_bg</item>
+
+    <color name="chat_win_title_bg">#0054acea</color>
+
+    <item name="chat_title_name" type="color">@color/color_bai</item>
+
+    <color name="traffic_bg">#ffe3e6e8</color>
+
+    <item name="traffic_txt" type="color">@color/color_hei</item>
+    <item name="traffic_data" type="color">@color/color_zhonghui</item>
+    <item name="chat_self_text_bg" type="color">@color/color_cihei</item>
+    <item name="chat_friend_text_bg" type="color">@color/color_cihei</item>
+    <item name="chat_text" type="color">@color/color_cihei</item>
+    <item name="chat_time" type="color">@color/color_bai</item>
+
+    <color name="chat_close_bg">#7f76bdf0</color>
+    <color name="chat_close_press">#7fa3cfee</color>
+    <color name="chat_send_bg">#ff9ad6ff</color>
+    <color name="chat_send_press">#ff54acea</color>
+    <color name="chat_edit_bg">#ffdddddd</color>
+    <color name="chat_edit_bg_press">#fffdfce4</color>
+
+    <item name="chat_edit_bg_solid" type="color">@color/color_bai</item>
+
+    <color name="chat_self_item_bg_stroke">#ffe1e1e1</color>
+    <color name="chat_self_item_bg_solid">#ffececec</color>
+    <color name="chat_friend_item_bg_stroke">#ffbaddf6</color>
+    <color name="chat_friend_item_bg_solid">#ffcdeaff</color>
+    <color name="chat_extra_item_bg_solid">#ffffd8d8</color>
+    <color name="chat_list_header_bg">#ffececec</color>
+    <color name="chat_list_header_bg_press">#ffd5d5d5</color>
+    <color name="chat_list_header_text">#ff666666</color>
+    <color name="chat_message_tip_bg">#ff98d4ff</color>
+
+    <item name="chat_message_tip_text" type="color">@color/color_cihei</item>
+    <item name="chat_message_tip_num" type="color">@color/color_bai</item>
+    <item name="chat_history_time_text" type="color">@color/color_shenhui</item>
+
+    <color name="chat_history_msg_text">#ff545454</color>
+    <color name="chat_emotion_unit_bg_stroke">#ffcacaca</color>
+    <color name="chat_emotion_unit_bg_solid">#ffe4e4e4</color>
+    <color name="chat_emotion_unit_press">#ffd5d5d5</color>
+    <color name="headerFore">#7f000000</color>
+    <color name="CustomedTabWidget">#33ffffff</color>
+    <color name="screenshot_normal">#3f000000</color>
+    <color name="screenshot_pressed">#bf000000</color>
+
+    <item name="recent_msg" type="color">@color/color_zhonghui</item>
+
+    <color name="recent_ptt_msg">#ff128406</color>
+    <color name="system_item_bg_read">#ffe7eaec</color>
+    <color name="system_item_bg_unread">#fff0f4f6</color>
+
+    <item name="system_item_name_read" type="color">@color/color_zhonghui</item>
+    <item name="system_item_name_unread" type="color">@color/color_hei</item>
+    <item name="qq_normal" type="color">@color/color_hei</item>
+
+    <color name="white">#fffffffe</color>
+
+    <item name="black" type="color">@color/color_hei</item>
+
+    <color name="video_bg_color">#ffecf3f9</color>
+    <color name="video_edge_color">#ffd0deee</color>
+    <color name="video_dlg_cover_color">#3f000000</color>
+    <color name="video_button_press">#ff242424</color>
+    <color name="video_button_release">#ff292929</color>
+    <color name="color_divider">#ffc9c9c9</color>
+    <color name="color_divider_for_friendlist_upper">#ffc9c9c9</color>
+    <color name="color_divider_for_friendlist_lower">#ffc9c9c9</color>
+    <color name="color_divider_for_contactlist_lower">#ffc2c8cd</color>
+    <color name="color_divider_for_friendlist_groupview">#ffc9c9c9</color>
+    <color name="color_divider_for_trooplist">#ffc9c9c9</color>
+    <color name="color_divider_for_recentlist_upper">#ffadb4ba</color>
+    <color name="color_divider_for_recentlist_lower">#ffebeeef</color>
+    <color name="color_divider_lbs_filter">#ffc2c8cd</color>
+
+    <item name="extrainfo" type="color">@color/color_cihei</item>
+
+    <color name="info_panel_bg">#ffeeeeee</color>
+    <color name="sqqname">#ffee860a</color>
+    <color name="list_item_bg">#fff0f4f6</color>
+    <color name="list_item_bg_focus">#ffe2e7eb</color>
+    <color name="list_item_bg_for_friendlist">#ffeef1f3</color>
+    <color name="list_item_focus_for_troop">#ffe9eaeb</color>
+    <color name="list_item_focus_for_friendlist">#ffd3d7da</color>
+    <color name="list_contact_prompt_line">#ffc2c8cd</color>
+    <color name="thirty_transparent_black">#4d000000</color>
+    <color name="twenty_transparent_black">#33000000</color>
+    <color name="thirty_trans_eee">#4ceeeeee</color>
+    <color name="fifteen_trans_black">#26000000</color>
+    <color name="add_troop_member_bg">#ffdadfe2</color>
+    <color name="list_item_press">#fff2f4f5</color>
+    <color name="list_item_line">#ffc2c8cd</color>
+    <color name="no_search_result_text">#ff808080</color>
+    <color name="sc_transparent_black">#7f000000</color>
+    <color name="sc_red">#ffff0000</color>
+    <color name="sc_window_background">#ff547896</color>
+    <color name="sc_nonchat_contact">#ff222222</color>
+    <color name="sc_chat_contact">#ffeeeeee</color>
+    <color name="sc_black">#ff000000</color>
+
+    <item name="sc_white" type="color">@color/color_bai_8</item>
+
+    <color name="sc_transparent">#00ffffff</color>
+    <color name="sc_gray">#ff777777</color>
+    <color name="sc_name">#ff5fc4ff</color>
+    <color name="sc_nameselect">#ff003366</color>
+    <color name="sc_loading">#ff5f98b8</color>
+
+    <item name="sc_transparent_background" type="color">@color/color_hei_8</item>
+
+    <color name="sc_chat_background">#aaffffff</color>
+    <color name="sc_chat_text">#ff6a6a6a</color>
+    <color name="sc_chat_time">#ff838383</color>
+    <color name="sc_msg_list_content">#ff6a6a6a</color>
+    <color name="sc_msg_list_time">#ff909090</color>
+    <color name="sc_login_background">#fff8f8f8</color>
+    <color name="sc_login_title_bg">#ff54acea</color>
+    <color name="sc_button_unselected">#ff54acea</color>
+    <color name="sc_button_selected">#ff333333</color>
+    <color name="sc_info_btn_press">#f043afd4</color>
+    <color name="sc_mainactivity_bg">#992e2e2e</color>
+
+    <item name="sc_homtlist_bg" type="color">@color/color_bai_8</item>
+
+    <color name="sc_hometab_text_s">#ff222222</color>
+    <color name="sc_hometab_text">#ff666666</color>
+    <color name="p_bg">#fff1f3f5</color>
+    <color name="p_text1">#ff727272</color>
+    <color name="p_text2">#ff343434</color>
+
+    <item name="text_drag_refresh_big" type="color">@color/color_shenhui</item>
+    <item name="text_drag_refresh_small" type="color">@color/color_shenhui</item>
+    <item name="text_net_err" type="color">@color/color_shenhui</item>
+    <item name="blank_color" type="color">@color/color_shenhui</item>
+    <item name="text_net_err_refetch" type="color">@color/color_shenhui</item>
+
+    <color name="tag_btn_bg1">#fff982b1</color>
+    <color name="tag_btn_bg2">#fff497e4</color>
+    <color name="tag_btn_bg3">#ff86d0ff</color>
+    <color name="tag_btn_bg4">#ffacd375</color>
+    <color name="tag_btn_bg5">#ff996600</color>
+    <color name="tag_textview1">#ff795028</color>
+    <color name="tag_textview2">#ff4a7928</color>
+    <color name="tag_textview3">#ff284479</color>
+    <color name="tag_textview">#f0000000</color>
+    <color name="bg_default">#ffc8cdd0</color>
+    <color name="leba_spacing_bg">#ffe1e4e6</color>
+
+    <item name="setting_text1" type="color">@color/color_hei</item>
+    <item name="setting_text2" type="color">@color/color_zhonghui</item>
+
+    <color name="setting_bg">#ffe3e6e8</color>
+    <color name="setting_gray">#ffc4c6c7</color>
+    <color name="no_auto_reply_normal">#ff636363</color>
+    <color name="no_auto_reply_press">#ffc6c6c6</color>
+    <color name="recent_emo_nothing">#ff979b9c</color>
+    <color name="tab_button_color">#ff212122</color>
+    <color name="userinfo_dialog_tou">#CC000000</color>
+    <color name="main_bg">#fff5f5f5</color>
+    <color name="ssq_red">#ffe50303</color>
+    <color name="ssq_green">#ff119000</color>
+    <color name="ssq_blue">#ff035de5</color>
+    <color name="text_color">#ffe50303</color>
+    <color name="my_white">#ff000000</color>
+    <color name="fc_line">#ffd5bba1</color>
+    <color name="fc_areaTxt">#ff826d48</color>
+    <color name="jz_host_guest">#ffd5bba1</color>
+    <color name="my_bg">#ffffd791</color>
+    <color name="my_labeltxt">#ff313131</color>
+    <color name="jc_choose_bg">#ffbf1111</color>
+    <color name="jc_sp">#ff000000</color>
+    <color name="jc_spinfo">#ff666666</color>
+    <color name="half_trans">#60000000</color>
+    <color name="jc_red">#ffe50303</color>
+    <color name="jc_green">#ff119000</color>
+    <color name="jc_blue">#ff035de5</color>
+    <color name="num_head_color">#ff725d38</color>
+    <color name="miss_head_color">#ff959595</color>
+    <color name="playtips_color">#ff666666</color>
+    <color name="my_accounttxt">#ff434343</color>
+    <color name="cutoff_rule">#ffababab</color>
+    <color name="txt_deep">#ff333333</color>
+    <color name="txt_middle">#ff666666</color>
+    <color name="txt_light">#ff999999</color>
+    <color name="line_light">#ffebebeb</color>
+    <color name="line_dark">#ffd8d8d8</color>
+    <color name="zhibo_execle_head_bkg">#fff4f4f4</color>
+    <color name="jz_item_fenge">#ffe3e3e3</color>
+    <color name="user_agree">#ff376fc3</color>
+    <color name="item_press">#fffef9d9</color>
+    <color name="host_decibel">#ff2a59ae</color>
+    <color name="guest_decibel">#ff188b05</color>
+    <color name="peidui_rukou">#ff1d64b3</color>
+    <color name="peidui_info_btm">#ffc7c7c7</color>
+    <color name="jk3_mybet_bg">#ff127501</color>
+    <color name="jk3_yl_item_bg">#ffe4e4e4</color>
+    <color name="jk3_select">#ff96de66</color>
+    <color name="jk3_hz_bg">#b0000000</color>
+    <color name="jk3_yl_max_bg">#ffffd822</color>
+    <color name="jk3_yl_line">#ff54a144</color>
+    <color name="jk3_hz_line">#ffaac9a6</color>
+    <color name="jk3_ylitem_line">#ffc8c8c8</color>
+    <color name="jk3_mybet_con">#ffb1ffa1</color>
+    <color name="jk3_mybet_time">#ff1eb300</color>
+    <color name="jk3_mybet_zj">#ffffd200</color>
+    <color name="jk3_dialog_title">#ffcaffc1</color>
+    <color name="rechargesum">#ffe5e5e5</color>
+    <color name="TextColorBlack">#ff000000</color>
+    <color name="TextColorWhite">#ffffffff</color>
+    <color name="TextColorGray">#ff505050</color>
+    <color name="ToastBgColor">#ff424242</color>
+    <color name="btnColor">#ffffffff</color>
+    <color name="textColorforItemTitle">#ff666666</color>
+    <color name="secondbtntextColor">#ff496ea3</color>
+    <color name="textColorforCheckBox">#ff333333</color>
+    <color name="bgColor">#fff2f2f2</color>
+    <color name="downLoadTextNomal">#ff3366cc</color>
+    <color name="downLoadTextPressed">#ffffffff</color>
+    <color name="downLoadBackNomal">#ffffffff</color>
+    <color name="downLoadBackFocus">#ff6698e7</color>
+    <color name="downLoadBackPressed">#ff3366cc</color>
+    <color name="dialog_tiltle_blue">#ff2277bb</color>
+
+</resources>

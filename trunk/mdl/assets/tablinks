@@ -1,0 +1,12 @@
+<!DOCTYPE tabs SYSTEM "RootElement.dtd">
+<tabs>
+	<item name="login" title="登录"><![CDATA[http://ddgame.hutuchong.com/3g/login.php]]></item>
+	<item name="category" title="精选分类"><![CDATA[http://ddgame.hutuchong.com/3g/category.php]]></item>
+	<item name="favlist" title="收藏夹"><![CDATA[http://ddgame.hutuchong.com/3g/favlist.php]]></item>
+	<item name="fav" title="加入收藏"><![CDATA[http://ddgame.hutuchong.com/3g/fav.php]]></item>
+	<item name="favdel" title="删除收藏"><![CDATA[http://ddgame.hutuchong.com/3g/fav_del.php]]></item>
+	<item name="search" title="搜索"><![CDATA[http://ddgame.hutuchong.com/3g/search.php]]></item>
+	<item name="newest" title="最新发布"><![CDATA[http://ddgame.hutuchong.com/3g/newest.php]]></item>
+	<item name="top" title="下载排行"><![CDATA[http://ddgame.hutuchong.com/3g/top.php]]></item>
+	<item name="hot" title="精品推荐"><![CDATA[http://ddgame.hutuchong.com/3g/hot.php]]></item>
+</tabs>

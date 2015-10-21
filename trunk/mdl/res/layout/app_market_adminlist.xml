@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/v_topest" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!-- -->
+	<include android:id="@+id/title_panel" layout="@layout/title_bar_market" />
+	<!-- -->
+	<LinearLayout android:layout_below="@id/title_panel"
+		android:id="@+id/downning_bar" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/market_manage_downning_bg">
+		<TextView android:gravity="center" android:text="正在下载"
+			android:textColor="#FF000000" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/market_manage_downning" />
+	</LinearLayout>
+	<TextView android:layout_below="@id/downning_bar" android:id="@+id/installed_bar"
+		android:padding="4dip" android:gravity="center" android:text="已经安装软件"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textColor="#FF000000" android:background="@drawable/market_manage_installed_bar" />
+	<!-- -->
+	<FrameLayout android:layout_alignParentBottom="true"
+		android:id="@+id/nav_panel" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<include layout="@layout/nav_bar_market" />
+	</FrameLayout>
+	<!-- -->
+	<ListView android:id="@+id/listview" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_above="@id/nav_panel"
+		android:layout_below="@id/installed_bar" />
+	<!-- -->
+	<FrameLayout android:layout_above="@id/nav_panel"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<include layout="@layout/optionmenu_popup" />
+	</FrameLayout>
+	<!-- 网络状态 -->
+	<ProgressBar android:id="@+id/progressImage"
+		android:layout_centerInParent="true"
+		style="@android:style/Widget.ProgressBar.Inverse" mce_style="@android:style/Widget.ProgressBar.Inverse"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/mobi.domore.mcdonalds"
+	android:id="@+id/ad_panel" android:gravity="center"
+	android:orientation="vertical" android:background="#000000">
+	<!--  -->
+	<net.youmi.android.AdView android:id="@+id/adview"
+		app:backgroundColor="#00000000" app:testing="false"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		app:refreshInterval="30"
+		app:keywords="andorid game software sns im picture image photo girl"
+		app:isGoneWithoutAd="true" app:changeAdAnimation="true" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/title_panel" android:clickable="true" android:gravity="center_vertical"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="@drawable/title_bar_bg">
+	<!-- 左按钮 -->
+	<Button android:id="@+id/btn_left" style="@style/btn_style"
+		android:layout_margin="4dip" android:background="@drawable/icon"
+		android:scaleType="centerInside" android:layout_width="48dip"
+		android:layout_height="48dip" />
+	<!-- 标题信息 -->
+	<TextView android:id="@+id/title_text" style="@style/title_text_style"
+		android:layout_width="wrap_content" android:layout_weight="1"
+		android:gravity="center" android:layout_height="wrap_content" />
+	<!-- 右按钮 -->
+	<Button android:id="@+id/btn_right" android:layout_marginRight="4dip"
+		android:background="@drawable/time_icon" android:textSize="12dip"
+		android:clickable="true" android:textStyle="bold"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:text="有效期至：" android:visibility="invisible" android:textColor="#A0ffffff" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/title_panel" android:clickable="true"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="@drawable/title_bar_bg">
+	<!-- 返回按钮 -->
+	<Button android:id="@+id/btn_left" style="@style/btn_style"
+		android:layout_marginLeft="4dip" android:background="@drawable/nav_back_background"
+		android:text="@string/back_text" android:layout_centerVertical="true"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<!-- 下一条 -->
+	<Button android:id="@+id/btn_nextitem"
+		android:layout_marginRight="4dip" android:background="@drawable/nextitem_btn_r_background"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_centerVertical="true" android:layout_alignParentRight="true" />
+	<!-- 上一条 -->
+	<Button android:id="@+id/btn_preitem" android:background="@drawable/nextitem_btn_l_background"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_centerVertical="true" android:layout_toLeftOf="@id/btn_nextitem" />
+	<!-- 标题信息 -->
+	<TextView android:id="@+id/title_text" style="@style/title_text_style"
+		android:layout_toRightOf="@id/btn_left" android:layout_toLeftOf="@id/btn_preitem"
+		android:layout_centerVertical="true" android:layout_width="fill_parent"
+		android:gravity="center" android:layout_height="wrap_content" />
+</RelativeLayout>

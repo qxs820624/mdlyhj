@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<!-- -->
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<!-- -->
+		<FrameLayout android:id="@+id/title_panel"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<include layout="@layout/title_bar" />
+		</FrameLayout>
+		<!-- -->
+		<LinearLayout android:id="@+id/channellist_scroll_panel"
+			android:visibility="gone" android:layout_below="@id/title_panel"
+			android:background="@drawable/top_channel_bg_normal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<!-- -->
+			<ImageView android:visibility="invisible" android:id="@+id/channel_left_panel"
+				android:src="@drawable/channel_left" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:scaleType="centerInside" />
+			<!-- -->
+			<cn.coolworks.view.HorizontalScrollViewEx
+				android:id="@+id/channellist_scroll_view" android:scrollbars="none"
+				android:layout_below="@id/title_panel" android:background="@drawable/top_channel_bg_normal"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:gravity="center_vertical">
+				<FrameLayout android:layout_width="wrap_content"
+					android:layout_height="fill_parent">
+					<FrameLayout android:layout_width="90dip"
+						android:id="@+id/channellist_panel_" android:layout_height="wrap_content">
+						<GridView android:id="@+id/channellist_grid_1"
+							android:listSelector="@drawable/top_channel_background"
+							android:scrollbars="none" android:layout_width="fill_parent"
+							android:gravity="center" android:layout_height="fill_parent"
+							android:stretchMode="columnWidth" android:horizontalSpacing="4dip">
+						</GridView>
+						<ImageView android:id="@+id/top_channel_bg_selected"
+							android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					</FrameLayout>
+				</FrameLayout>
+			</cn.coolworks.view.HorizontalScrollViewEx>
+			<!-- -->
+			<ImageView android:visibility="invisible" android:id="@+id/channel_right_panel"
+				android:src="@drawable/channel_right" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:scaleType="centerInside" />
+		</LinearLayout>
+		<!-- -->
+		<FrameLayout android:id="@+id/scroller_"
+			android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<include layout="@layout/ad_panel" />
+		</FrameLayout>
+		<!-- -->
+		<ListView android:layout_below="@id/channellist_scroll_panel"
+			android:layout_above="@id/scroller_" android:id="@+id/game_listview"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:persistentDrawingCache="animation|scrolling"
+			android:layoutAnimation="@anim/list_layout_controller">
+		</ListView>
+		<!-- -->
+		<ImageView android:layout_alignTop="@id/game_listview"
+			android:background="@drawable/gradient_up" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<ImageView android:layout_alignBottom="@id/game_listview"
+			android:background="@drawable/gradient_down" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<!-- 网络状态 -->
+		<ProgressBar android:id="@+id/progressImage"
+			android:layout_centerInParent="true"
+			style="@android:style/Widget.ProgressBar.Inverse" mce_style="@android:style/Widget.ProgressBar.Inverse"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:visibility="gone" />
+	</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:paddingRight="6dip" android:paddingTop="6dip"
+	android:paddingBottom="6dip" android:paddingLeft="2dip"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<!-- -->
+	<LinearLayout android:layout_marginTop="10dip"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<ImageView android:id="@+id/item_read" android:background="@drawable/msg_unread"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/item_read_text" android:text="@string/readed_text"
+			style="@style/list_item_style_subtitle" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<!-- -->
+	<LinearLayout android:id="@+id/item_panel"
+		android:clickable="true" android:background="@drawable/msg_item_background"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:gravity="center_vertical" android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:layout_margin="10dip" android:gravity="center_vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TextView android:id="@+id/item_cate" android:text="author"
+				android:layout_weight="1" style="@style/list_item_style_title"
+				android:layout_width="wrap_content" android:layout_height="fill_parent" />
+			<TextView android:id="@+id/item_date" android:text="2010-06-26"
+				style="@style/list_item_style_subtitle" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" />
+		</LinearLayout>
+		<TextView android:id="@+id/item_title" android:text="title"
+			android:singleLine="false" android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip" android:layout_marginBottom="10dip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<!-- -->
+		<LinearLayout android:id="@+id/item_more"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView android:id="@+id/item_desc" android:text="desc"
+				android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<!-- -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_margin="10dip"
+				android:gravity="center">
+				<ImageView android:id="@+id/item_image1" android:src="@drawable/thumb_default"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<ImageView android:id="@+id/item_image2" android:src="@drawable/thumb_default"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="4dip" />
+			</LinearLayout>
+			<Button android:id="@+id/item_down" android:background="@drawable/btn_bg"
+				android:text="下 载" style="@style/btn_style" android:layout_gravity="center"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginBottom="10dip" />
+			<!-- -->
+			<LinearLayout android:background="@drawable/msg_item_bottom_bg"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<!-- del panel -->
+				<LinearLayout android:id="@+id/del_panel"
+					android:background="@drawable/msg_item_bottom_leftbackground"
+					android:gravity="center_vertical" android:clickable="true"
+					android:layout_width="wrap_content" android:layout_height="fill_parent">
+					<TextView android:background="@drawable/msg_item_bottom_del"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="16dip" />
+					<TextView android:text="删 除" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_marginLeft="6dip" />
+					<TextView android:background="@drawable/msg_bottom_split"
+						android:layout_width="wrap_content" android:layout_height="fill_parent"
+						android:layout_marginLeft="8dip" />
+				</LinearLayout>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_weight="1" />
+				<!-- reply panel -->
+				<LinearLayout android:id="@+id/reply_panel"
+					android:background="@drawable/msg_item_bottom_rightbackground"
+					android:gravity="center_vertical" android:clickable="true"
+					android:layout_width="wrap_content" android:layout_height="fill_parent">
+					<TextView android:background="@drawable/msg_bottom_split"
+						android:layout_width="wrap_content" android:layout_height="fill_parent"
+						android:layout_marginRight="8dip" />
+					<TextView android:background="@drawable/msg_item_bottom_reply"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					<TextView android:text="回 复" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_marginLeft="6dip"
+						android:layout_marginRight="16dip" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

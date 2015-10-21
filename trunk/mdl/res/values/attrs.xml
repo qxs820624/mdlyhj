@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="com.hutuchong.view">
+		<attr name="backgroundColor" format="color" />
+		<attr name="primaryTextColor" format="color" />
+		<attr name="secondaryTextColor" format="color" />
+		<attr name="keywords" format="string" />
+		<attr name="refreshInterval" format="integer" />
+		<attr name="testing" format="boolean" />
+		<attr name="textColor" format="color" />
+		<attr name="textSelectedColor" format="color" />
+		<attr name="text_selected_bg" format="reference" />
+		<attr name="textFontSize" format="float" />
+		<attr name="isGoneWithoutAd" format="boolean" />
+		<attr name="changeAdAnimation" format="boolean" />
+		<attr name="vertical" format="boolean" />
+		<!-- -->
+		<attr name="adPosition" format="string" />
+		<attr name="adInterval" format="integer" />
+		<attr name="debug" format="boolean" />
+	</declare-styleable>
+	<!-- -->
+	<declare-styleable name="DomobPanel">
+		<attr name="animationDuration" format="integer" />
+		<attr name="position">
+			<enum name="top" value="0" />
+			<enum name="bottom" value="1" />
+			<enum name="center" value="4" />
+		</attr>
+		<attr name="handleWidth">
+			<enum name="wrap_content" value="0" />
+			<enum name="fill_parent" value="1" />
+		</attr>
+		<attr name="animationType">
+			<enum name="shake_horizontal" value="1" />
+			<enum name="shake_vertical" value="2" />
+			<enum name="zoom" value="3" />
+			<enum name="in_from_left" value="4" />
+			<enum name="in_from_right" value="5" />
+		</attr>
+		<attr name="spot" format="string"></attr>
+	</declare-styleable>
+</resources>

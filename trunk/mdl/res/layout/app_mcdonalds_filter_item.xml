@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/list_item_background_1">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:padding="8dip">
+		<TextView android:id="@+id/item_text" android:text="双层火腿拔汉堡"
+			android:textColor="#777777" android:textSize="16dip"
+			android:textStyle="bold" android:layout_weight="1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<!-- -->
+		<ImageView android:id="@+id/item_chk" android:src="@drawable/btn_chk_ok"
+			android:paddingTop="5dip" android:paddingBottom="5dip"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+</FrameLayout>

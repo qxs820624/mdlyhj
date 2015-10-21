@@ -1,0 +1,192 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobi.domore.mcdonalds"
+    android:versionCode="43"
+    android:versionName="1.0.43" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="mobi.domore.mcdonalds.DmApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.DdnewNormal" >
+        <meta-data
+            android:name="miguopen_appid"
+            android:value="appid:006271586473485262" />
+        <meta-data
+            android:name="excode"
+            android:value="excode:0001" />
+        <!-- mcdonalds begin -->
+        <activity
+            android:name="com.hutuchong.app_mcdonalds.McdonaldsActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hutuchong.app_mcdonalds.NavListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" />
+        <!-- mcdonalds end -->
+
+
+        <!-- WebDialog -->
+        <activity android:name="com.hutuchong.util.WebDialog" />
+        <activity android:name="com.hutuchong.util.AboutActivity" />
+        <activity
+            android:name="com.hutuchong.app_user.MessageListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name="com.hutuchong.app_game.MarketListActivity_1"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name="com.hutuchong.app_game.MarketListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <!-- game end -->
+        <!-- domob.cn -->
+        <activity
+            android:name="cn.domob.donwload.DownloadCancelActivity"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name="com.example.mymusic.MusicChartListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.mymusic.PlayMusicActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.mymusic.MusicNameListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <!-- services begin -->
+        <service android:name="com.hutuchong.app_mcdonalds.service.McdonaldsService" />
+        <service android:name="com.hutuchong.app_user.service.UserService" />
+        <service android:name="com.hutuchong.app_user.service.MessageService" />
+        <service android:name="com.hutuchong.app_game.service.UpdateService" />
+        <service android:name="com.hutuchong.app_game.service.GameService" />
+        <!-- services end -->
+        <activity android:name="com.cmsc.cmmusic.common.CMMusicActivity" >
+        </activity>
+
+        <service
+            android:name="com.cmsc.cmmusic.common.MediaService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.android.sitech.ttpod.media.MEDIASERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name="com.migu.sdk.service.MiguSdkService" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4e7be0cc52701533eb000046" />
+
+        <!-- mobi.ddup.ftchinese b2bb1078eff2794d b9bdff8b34898d3d -->
+        <!-- com.hutudan.qiangyan 9021d3bcfcc1868a c7776fe83b9f7a0f -->
+        <!-- youmi.net begin -->
+        <meta-data
+            android:name="UmAd_APP_SEC"
+            android:value="b9bdff8b34898d3d" />
+        <meta-data
+            android:name="UmAd_APP_ID"
+            android:value="b2bb1078eff2794d" />
+        <!-- youmi.net end -->
+        <!-- casee begin -->
+        <meta-data
+            android:name="com.casee.adsdk.siteId"
+            android:value="1CFA23C07241BF198DEC50AECE886AC6" />
+        <meta-data
+            android:name="com.casee.adsdk.isTesting"
+            android:value="false" />
+        <!-- casee end -->
+        <!--  -->
+        <!-- smartmad begin -->
+        <meta-data
+            android:name="APP_ID"
+            android:value="4b5e69c9438716d1" >
+        </meta-data>
+        <!-- smartmad end -->
+
+
+        <!-- wooboo end -->
+        <meta-data
+            android:name="Wooboo_PID"
+            android:value="5f0dde42e4f847d7b02b3deb41b6bbb9" />
+        <meta-data
+            android:name="Telead_PID"
+            android:value="95bbd0de0e324e37a6fa65633fe496a4" />
+        <meta-data
+            android:name="Market_ID"
+            android:value="1" />
+        <!-- wooboo end -->
+
+
+        <!-- mobus begin -->
+        <meta-data
+            android:name="Mobus_AdsId"
+            android:value="2250" >
+        </meta-data>
+        <meta-data
+            android:name="Mobus_AppID"
+            android:value="1000706" >
+        </meta-data>
+        <meta-data
+            android:name="Mobus_AppType"
+            android:value="27" >
+        </meta-data>
+        <meta-data
+            android:name="Mobus_KeyCode"
+            android:value="8" >
+        </meta-data>
+        <meta-data
+            android:name="Mobus_Interval"
+            android:value="10" >
+        </meta-data>
+        <meta-data
+            android:name="Mobus_IsTest"
+            android:value="0" >
+        </meta-data>
+        <!-- mobus end -->
+        <!-- admob.cn -->
+        <meta-data
+            android:name="DOMOB_PID"
+            android:value="56OJycI4uMWvrLvi1M" />
+
+        <!-- domob.cn -->
+        <meta-data
+            android:name="DOMOB_PID"
+            android:value="56OJycI4uMSjyOuiaD" />
+    </application>
+
+    <uses-sdk android:minSdkVersion="4" />
+    <!-- //@@1.5 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+</manifest>

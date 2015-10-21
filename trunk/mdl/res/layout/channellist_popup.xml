@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/popup_channellist_panel" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<GridView android:id="@+id/channellist_grid"
+		android:paddingTop="20dip"
+		android:paddingBottom="20dip"
+		android:verticalSpacing="10dip"
+		android:background="@drawable/tipbar_down_bg" android:visibility="invisible"
+		android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:numColumns="auto_fit">
+	</GridView>
+</FrameLayout>

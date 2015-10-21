@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 背景图 -->
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/play_seek_bg"/>
+    <!-- 全部能量图 -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip android:drawable="@android:color/transparent" />
+    </item>
+
+    <!-- 进和能量图 -->
+    <item android:id="@+android:id/progress">
+        <clip android:drawable="@drawable/play_seek_jd" />
+    </item>
+
+</layer-list>
