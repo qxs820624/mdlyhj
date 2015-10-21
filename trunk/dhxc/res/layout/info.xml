@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/myroutebg"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+     <FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/top"   
+     >
+    <ImageButton android:id="@+id/backinfo" android:background="@drawable/iconbackshowroute"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|left"
+			android:layout_marginLeft="10dip" />
+    <TextView 
+    android:layout_height="wrap_content"
+    android:id="@+id/tv"
+    android:layout_gravity="center"
+  
+    android:text="用户资料"
+    android:textColor="#fffeed"
+    android:textSize="20dip"
+    android:layout_width="wrap_content"/>
+    </FrameLayout>  
+    <ImageView 
+    android:id="@+id/gravatar"
+    android:layout_marginTop="20dip"
+    android:padding="5px"
+    android:layout_width="161px" 
+    android:layout_height="161px"
+    android:src="@drawable/defaultgravater2"
+    android:layout_gravity="center_horizontal"
+    android:scaleType="center"
+    />
+     <LinearLayout 
+    android:layout_marginTop="20dip"
+     android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    >
+    <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="昵称      "
+    />
+    <EditText 
+    android:id="@+id/nicheng"
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittextbg"
+    />
+    </LinearLayout> 
+       <LinearLayout 
+    android:layout_marginTop="20dip"
+     android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    >
+    <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="性别      "
+    />
+    <Button 
+    android:id="@+id/boy"
+    android:layout_width="100dip"
+    android:layout_height="wrap_content"
+
+    />
+        <Button 
+    android:id="@+id/gril"
+    android:layout_width="100dip"
+    android:layout_height="wrap_content"
+
+    />
+    </LinearLayout> 
+      <LinearLayout 
+    android:layout_marginTop="20dip"
+     android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    >
+    <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="签名      "
+    />
+    <EditText 
+    android:id="@+id/qianming"
+    android:layout_width="200dip"
+    android:layout_height="100dip"
+      android:background="@drawable/edittextbg"
+    />
+    </LinearLayout>
+        
+    <Button android:id="@+id/saveinfo" 
+    android:text="保存"
+    android:textColor="#ffffff"
+    android:layout_marginTop="25dip"
+    android:layout_width="wrap_content"
+     android:layout_height="wrap_content" 
+      android:background="@drawable/buttonpress1"
+        android:layout_gravity="center_horizontal"
+   ></Button>
+ 
+</LinearLayout>

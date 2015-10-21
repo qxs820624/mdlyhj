@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uploading">正在上传...</string>
+    <string name="post_record_empty_content">请输入内容</string>
+    <string name="post_record_success">记录发表成功...</string>
+    <string name="post_record_fail">记录发表失败...</string>
+    <string name="loading_photo">正在加载图片...</string>
+    <string name="getting_logged_in_user">正在获取用户UID...</string>
+    <string name="task_failed">请求的任务失败</string>
+    <string name="task_failed_arg_err">传入的参数错误，请检查代码</string>
+    <string name="task_failed_network_err">网络错误，请重试</string>
+    <string name="task_cancel_auth_success">取消授权成功</string>
+    <string name="task_failed_class_cast_err">Java换型错误，请检查代码</string>
+    <string name="task_failed_json_parse_err">JSON解析错误，请检查代码</string>
+    <string name="task_failed_malformed_url_err">错误的 URL,请检查请求的URL</string>
+    <string name="task_failed_encoder_err">字符串转换失败，请检查代码</string>
+    <string name="json_upload_photo_result">返回结果(JSON格式)</string>
+    <string name="pull_to_refresh_pull_label">下拉进行刷新...</string>
+    <string name="pull_to_refresh_release_label">松开进行刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">数据加载中...</string>
+    <string name="pull_to_refresh_tap_label"></string>
+    <string name="msg_btn_edit">编辑</string>
+    <string name="msg_btn_cancel">取消</string>
+</resources>

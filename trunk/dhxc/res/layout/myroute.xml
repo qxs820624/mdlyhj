@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llroute"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/daohangxianlubg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/top"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#ffa555"
+            android:textSize="20dip" />
+
+        <ImageButton
+            android:id="@+id/ibback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/iconbackshowroute" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:paddingLeft="60dip"
+            android:paddingRight="60dip"
+            android:text="我的线路"
+            android:textColor="#fffeed"
+            android:textSize="30dip" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="154px"
+            android:layout_height="154px"
+            android:layout_gravity="center"
+            android:src="@drawable/iconseven" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无线路！"
+            android:textColor="#5b5b5b"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+</LinearLayout>

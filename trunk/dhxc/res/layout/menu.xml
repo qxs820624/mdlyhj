@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:id="@+id/menu"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@android:color/darker_gray"
+  >
+<Button 
+android:id="@+id/bianji"
+  android:layout_width="300dip"
+  android:layout_height="wrap_content"
+      android:layout_marginTop="20dip"
+  android:background="@drawable/menupressed"
+  android:text="编辑相片"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:textColor="#ffffffff"
+
+/>
+<Button 
+android:id="@+id/fenxiang"
+  android:layout_width="300dip"
+  android:layout_height="wrap_content"
+  android:background="@drawable/menupressed"
+  android:text="分享相片"
+  android:layout_gravity="center"
+  android:gravity="center"
+    android:layout_marginTop="20dip"
+      android:textColor="#ffffffff"
+/>
+<Button 
+android:id="@+id/shanchu"
+  android:layout_width="300dip"
+  android:layout_height="wrap_content"
+  android:background="@drawable/menupresshong"
+  android:text="删除相片"
+  android:layout_gravity="center"
+  android:gravity="center"
+   android:layout_marginTop="20dip"
+     android:textColor="#ffffffff"
+/>
+</LinearLayout>

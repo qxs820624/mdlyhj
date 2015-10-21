@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jingxunnet.cmusic"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+    <application
+        android:icon="@drawable/tubiao"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.duom.activity.Task1Activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="appid"
+            android:value="appid:004837382044404442" />
+
+        <activity
+            android:name="com.example.mymusic.MusicChartListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.mymusic.PlayMusicActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.mymusic.MusicNameListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.cmsc.cmmusic.common.CMMusicActivity" />
+        <activity android:name="com.duom.activity.AddTabActivity" >
+        </activity>
+        <activity android:name="com.duom.activity.Navigation" >
+        </activity>
+        <activity android:name="com.duom.activity.Photo" >
+        </activity>
+        <activity android:name="com.duom.activity.MostNew" >
+        </activity>
+        <activity android:name="com.duom.activity.MostHost" >
+        </activity>
+        <activity android:name="com.duom.activity.Area" >
+        </activity>
+        <activity android:name="com.duom.activity.Add" >
+        </activity>
+        <activity android:name="com.duom.activity.Scan" >
+        </activity>
+        <activity android:name="com.duom.activity.Login" >
+        </activity>
+        <activity android:name="com.duom.activity.Register" >
+        </activity>
+        <activity android:name="com.duom.activity.Info" >
+        </activity>
+        <activity android:name="com.duom.activity.Galleryview" >
+        </activity>
+        <activity android:name="com.duom.activity.Editview" >
+        </activity>
+        <activity android:name="com.duom.activity.Mysave" >
+        </activity>
+        <activity android:name="com.duom.activity.Comment" >
+        </activity>
+        <activity android:name="com.duom.activity.Mycommented" >
+        </activity>
+        <activity android:name="com.duom.activity.Pinglun" >
+        </activity>
+        <activity android:name="com.duom.activity.Showpicture" >
+        </activity>
+        <activity
+            android:name="com.duom.activity.Listview"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.duom.activity.Choosemusic"
+            android:theme="@style/Theme.DuomeDialog" >
+        </activity>
+        <activity
+            android:name="com.duom.activity.Choosebg"
+            android:theme="@style/Theme.DuomeDialog" >
+        </activity>
+        <activity
+            android:name="com.duom.activity.Choosewether"
+            android:theme="@style/Theme.DuomeDialog" >
+        </activity>
+        <activity
+            android:name="com.duom.activity.Choosedate"
+            android:theme="@style/Theme.DuomeDialog" >
+        </activity>
+        <activity
+            android:name="com.duom.activity.Prompt"
+            android:theme="@style/Theme.DuomeDialog" >
+        </activity>
+        <activity
+            android:name="com.duom.activity.Showall"
+            android:theme="@style/Theme.DuomeDialog" >
+        </activity>
+        <activity android:name="com.duom.activity.ShowRoute" >
+        </activity>
+        <activity android:name="com.duom.activity.Myroute" >
+        </activity>
+
+        <service android:name="service.Ser" >
+            <intent-filter>
+                <action android:name="com.duom.daohangyinyue" >
+                </action>
+            </intent-filter>
+        </service>
+        <meta-data android:name="excode" android:value="excode:014A138"/>
+    </application>
+
+</manifest>

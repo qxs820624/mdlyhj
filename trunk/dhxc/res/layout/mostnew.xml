@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/fristpagebackground">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="match_parent">
+		 <ProgressBar
+        android:id="@+id/progressnew"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        mce_style="@android:style/Widget.ProgressBar.Inverse"
+        android:visibility="gone" />
+		<ListView android:id="@+id/listnew" android:layout_width="match_parent"
+			android:layout_height="match_parent" android:cacheColorHint="#00000000"
+			android:divider="#f6dbc0" android:dividerHeight="2dp"></ListView>
+		<Button android:layout_height="wrap_content" android:id="@+id/tianjialuxian"
+			android:layout_width="wrap_content" android:layout_alignBottom="@+id/listnew"
+			android:layout_centerHorizontal="true" android:background="@drawable/tianjialuxian1"></Button>
+	</RelativeLayout>
+</LinearLayout>

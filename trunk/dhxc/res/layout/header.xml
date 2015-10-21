@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+   	<LinearLayout android:orientation="vertical"
+		android:layout_width="match_parent" android:layout_height="160px"
+		android:background="@drawable/zhongjian">
+		<Gallery android:id="@+id/glcomment" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:padding="5px" />
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="match_parent" android:layout_height="66px"
+		android:gravity="center_vertical" android:background="@drawable/pinglun">
+		<RatingBar android:id="@+id/barcomment" android:isIndicator="true"
+			android:maxHeight="44px" android:fitsSystemWindows="true" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			style = "?android:attr/ratingBarStyleIndicator" />
+	</LinearLayout> 
+</LinearLayout>

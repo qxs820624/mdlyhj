@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:gravity="center_horizontal"
+  android:background="@drawable/selectbg"
+>
+    <GridView android:gravity="center_horizontal"      
+    android:id="@+id/gvchoose" 
+    android:layout_marginTop="15dip"
+    android:numColumns="2" android:layout_width="180dip" 
+    android:verticalSpacing="10dip"
+    android:horizontalSpacing="10dip"
+    android:padding="3px"
+    android:listSelector="@drawable/xiaokuangpress"
+    android:layout_height="fill_parent"></GridView>
+    <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="15dip"
+    android:clickable="false"
+    android:background="@android:color/transparent"
+    />
+</LinearLayout>
