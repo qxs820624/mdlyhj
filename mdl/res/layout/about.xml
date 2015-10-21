@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aboutme_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏目 -->
+
+    <FrameLayout
+        android:id="@+id/title_sub_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_bar" />
+    </FrameLayout>
+    <!-- 联系方式 -->
+
+    <LinearLayout
+        android:id="@+id/contactme_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/nav_bar_bg"
+        android:padding="6dip" android:visibility="gone">
+
+        <TextView
+            style="@style/text_style_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dip"
+            android:text="@string/tel"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/sym_action_email" />
+
+        <ImageButton
+            android:id="@+id/btn_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/sym_action_call" />
+    </LinearLayout>
+    <!-- 内容正文 -->
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/contactme_panel"
+        android:layout_below="@id/title_sub_panel" >
+    </WebView>
+    <!-- 网络状态 -->
+
+    <ProgressBar
+        android:id="@+id/progressImage"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        mce_style="@android:style/Widget.ProgressBar.Inverse" />
+
+</RelativeLayout>

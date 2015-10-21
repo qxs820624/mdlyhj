@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<FrameLayout android:id="@+id/num_panel"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:padding="16dip">
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/num_bg"
+			android:padding="10dip">
+			<!-- -->
+			<TextView android:id="@+id/tv_title" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="10dip"
+				android:textSize="16dip" android:textColor="#cb0c0c" android:text="请选择需要购买的份数"
+				android:layout_marginLeft="10dip" />
+			<!-- -->
+			<ImageView android:id="@+id/num_1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_1_bg"
+				android:layout_marginTop="6dip" android:layout_below="@id/tv_title" />
+			<ImageView android:id="@+id/num_2" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_2_bg"
+				android:layout_toRightOf="@id/num_1" android:layout_alignTop="@id/num_1" />
+			<ImageView android:id="@+id/num_3" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_3_bg"
+				android:layout_toRightOf="@id/num_2" android:layout_alignTop="@id/num_2" />
+			<ImageView android:id="@+id/num_4" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_4_bg"
+				android:layout_toRightOf="@id/num_3" android:layout_alignTop="@id/num_3" />
+			<!-- -->
+			<ImageView android:id="@+id/num_5" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_5_bg"
+				android:layout_below="@id/num_1" />
+			<ImageView android:id="@+id/num_6" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_6_bg"
+				android:layout_toRightOf="@id/num_5" android:layout_alignTop="@id/num_5" />
+			<ImageView android:id="@+id/num_7" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_7_bg"
+				android:layout_toRightOf="@id/num_6" android:layout_alignTop="@id/num_6" />
+			<ImageView android:id="@+id/num_8" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_8_bg"
+				android:layout_toRightOf="@id/num_7" android:layout_alignTop="@id/num_7" />
+			<!-- -->
+			<ImageView android:id="@+id/num_9" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_9_bg"
+				android:layout_below="@id/num_5" />
+			<ImageView android:id="@+id/num_10" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_10_bg"
+				android:layout_toRightOf="@id/num_9" android:layout_alignTop="@id/num_9" />
+			<ImageView android:id="@+id/num_11" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_11_bg"
+				android:layout_toRightOf="@id/num_10" android:layout_alignTop="@id/num_10" />
+			<ImageView android:id="@+id/num_12" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/num_12_bg"
+				android:layout_toRightOf="@id/num_11" android:layout_alignTop="@id/num_11" />
+		</RelativeLayout>
+	</FrameLayout>
+	<!-- -->
+	<ImageButton android:id="@+id/btn_close"
+		android:background="@drawable/btn_close_bg" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignRight="@id/num_panel"
+		android:layout_alignTop="@id/num_panel" />
+</RelativeLayout>

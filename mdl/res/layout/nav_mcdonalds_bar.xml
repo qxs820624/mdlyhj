@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nav_bar_bg"
+    android:gravity="center_vertical" >
+
+    <!-- 全部 -->
+
+    <LinearLayout
+        android:id="@+id/nav_item_all_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/nav_sel_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="4dip" >
+
+        <ImageView
+            android:id="@+id/nav_item_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/nav_ic_all"
+            android:scaleType="centerInside" />
+
+        <TextView
+            style="@style/nav_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="0dip"
+            android:text="@string/nav_all_text"
+            android:textColor="#FFFFFFFF" />
+    </LinearLayout>
+    <!-- 筛选 -->
+
+    <LinearLayout
+        android:id="@+id/nav_item_filter_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/nav_sel_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="4dip" >
+
+        <ImageView
+            android:id="@+id/nav_item_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/nav_ic_filter"
+            android:scaleType="centerInside" />
+
+        <TextView
+            style="@style/nav_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="0dip"
+            android:text="@string/nav_filter_text"
+            android:textColor="#FFFFFFFF" />
+    </LinearLayout>
+    <!-- 周边 -->
+
+    <LinearLayout
+        android:id="@+id/nav_item_map_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/nav_sel_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="4dip" >
+
+        <ImageView
+            android:id="@+id/nav_item_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/nav_ic_map"
+            android:scaleType="centerInside" />
+
+        <TextView
+            style="@style/nav_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="0dip"
+            android:text="@string/nav_map_text"
+            android:textColor="#FFFFFFFF" />
+    </LinearLayout>
+    <!-- 菜单 -->
+
+    <LinearLayout
+        android:id="@+id/nav_item_menu_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/nav_sel_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="4dip" >
+
+        <ImageView
+            android:id="@+id/nav_item_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/nav_ic_menu"
+            android:scaleType="centerInside" />
+
+        <TextView
+            style="@style/nav_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="0dip"
+            android:text="@string/nav_menu_text"
+            android:textColor="#FFFFFFFF" />
+    </LinearLayout>
+    <!-- 更多 -->
+
+    <LinearLayout
+        android:id="@+id/nav_item_more_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/nav_sel_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="4dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/nav_item_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/nav_ic_more"
+            android:scaleType="centerInside" />
+
+        <TextView
+            style="@style/nav_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="0dip"
+            android:text="@string/nav_more_text"
+            android:textColor="#FFFFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_item_music_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+         >
+
+        <ImageView
+            android:id="@+id/nav_item_music"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/nav_btn_music_background"
+            android:scaleType="centerInside" />
+
+        <TextView
+            style="@style/nav_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="0dip"
+            android:text="音乐"
+            android:textColor="#FFFFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

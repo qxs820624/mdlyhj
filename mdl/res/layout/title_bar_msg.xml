@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/title_panel" android:clickable="true" android:gravity="center_vertical"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="@drawable/title_bar_bg">
+	<!-- 左按钮 -->
+	<Button android:id="@+id/btn_left" style="@style/btn_style"
+		android:layout_marginLeft="4dip" android:background="@drawable/nav_back_background"
+		android:text="@string/back_text" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<!-- 标题信息 -->
+	<TextView android:id="@+id/title_text" style="@style/title_text_style"
+		android:layout_width="fill_parent" android:layout_weight="1"
+		android:gravity="center" android:layout_height="wrap_content" />
+	<!-- 右按钮 -->
+	<Button android:id="@+id/btn_right" android:layout_marginRight="4dip"
+		android:background="@drawable/btn_share_background" style="@style/btn_style"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

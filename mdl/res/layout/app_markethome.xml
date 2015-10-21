@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/v_topest" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout android:id="@+id/v_page"
+		android:visibility="gone" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<!-- -->
+		<include android:id="@+id/title_panel" layout="@layout/title_bar_market" />
+		<!-- -->
+		<Gallery android:id="@+id/gallery_scroll"
+			android:layout_below="@id/title_panel" android:background="@drawable/gallery_scroll_bg"
+			android:layout_width="fill_parent" android:spacing="4dip"
+			android:layout_height="wrap_content" />
+		<LinearLayout android:id="@+id/tab_panel"
+			android:layout_below="@id/gallery_scroll" android:background="@drawable/tab_bg"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="bottom">
+			<Button android:id="@+id/btn_tab_1" android:background="@drawable/tab_background"
+				android:layout_weight="1" android:text="装机必备" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:layout_marginLeft="6dip" />
+			<Button android:id="@+id/btn_tab_2" android:background="@drawable/tab_background"
+				android:layout_weight="1" android:text="精品游戏" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" />
+			<Button android:id="@+id/btn_tab_3" android:background="@drawable/tab_background"
+				android:layout_weight="1" android:text="精品应用" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:layout_marginRight="6dip" />
+		</LinearLayout>
+		<!-- -->
+		<FrameLayout android:layout_alignParentBottom="true"
+			android:id="@+id/nav_panel" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<include layout="@layout/nav_bar_market" />
+		</FrameLayout>
+		<!-- -->
+		<GridView android:id="@+id/gridview" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_below="@id/tab_panel"
+			android:listSelector="@drawable/list_item_focused"
+			android:layout_above="@id/nav_panel" android:numColumns="2">
+		</GridView>
+		<!-- -->
+		<FrameLayout android:layout_above="@id/nav_panel"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<include layout="@layout/optionmenu_popup" />
+		</FrameLayout>
+		<!-- 网络状态 -->
+		<ProgressBar android:id="@+id/progressImage"
+			android:layout_centerInParent="true"
+			style="@android:style/Widget.ProgressBar.Inverse" mce_style="@android:style/Widget.ProgressBar.Inverse"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</RelativeLayout>
+	<!-- -->
+	<include android:id="@+id/title_panel" layout="@layout/flash_panel" />
+</RelativeLayout>

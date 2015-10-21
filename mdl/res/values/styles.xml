@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- 无白色边框的对话狂样式 -->
+	<style name="Theme.DuomeDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:backgroundDimEnabled">false</item>
+	</style>
+	<!-- -->
+	<style name="Theme.DdnewBlack" parent="android:Theme.Black">
+		<item name="android:windowNoTitle">true</item>
+		<!-- <item name="android:windowBackground">@drawable/bg</item> -->
+		<item name="android:windowFullscreen">false</item>
+		<item name="android:gridViewStyle">@style/grid_style</item>
+	</style>
+	<style name="Theme.DdnewWhite" parent="android:Theme.Light">
+		<!-- <item name="android:windowBackground">@drawable/bg</item> -->
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">false</item>
+		<item name="android:gridViewStyle">@style/grid_style</item>
+	</style>
+	<!-- -->
+	<style name="Theme.DdnewNormal" parent="android:Theme.Light">
+		<item name="android:windowBackground">@drawable/bg</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">false</item>
+		<!-- <item name="android:windowBackground">@drawable/list_item_normal</item> -->
+		<item name="android:listViewStyle">@style/list_style</item>
+		<item name="android:gridViewStyle">@style/grid_style</item>
+	</style>
+
+	<style name="list_style" parent="android:style/Widget.AbsListView">
+		<!-- <item name="android:fadingEdge">none</item> -->
+		<!-- <item name="android:dividerHeight">2.0dip</item>-->
+		<!-- <item name="android:divider">@drawable/list_divider</item>-->
+		<!-- <item name="android:headerDividersEnabled">true</item> <item name="android:footerDividersEnabled">true</item> -->
+		<!-- <item name="android:listSelector">@drawable/list_item_background_0</item> -->
+	</style>
+	<style name="list_item_style_title">
+		<item name="android:textSize">16dip</item>
+		<!-- <item name="android:textStyle">bold</item> -->
+		<item name="android:maxLines">2</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:textColor">#E0000000</item>
+	</style>
+	<style name="list_item_style_subtitle">
+		<item name="android:textSize">14dip</item>
+		<item name="android:maxLines">2</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:textColor">#A0000000</item>
+	</style>
+	<style name="grid_style" parent="android:style/Widget.GridView">
+		<item name="android:listSelector">@drawable/popup_grid_item_background</item>
+		<item name="android:textColor">#FFFFFFFF</item>
+	</style>
+	<style name="grid_item_style">
+		<item name="android:textSize">16dip</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textColor">#CFFFFFFF</item>
+	</style>
+	<style name="title_text_style">
+		<item name="android:textColor">#CFFFFFFF</item>
+		<item name="android:textSize">22dip</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:singleLine">true</item>
+	</style>
+	<style name="nav_text_style">
+		<item name="android:textColor">#CFFFFFFF</item>
+		<item name="android:textSize">16dip</item>
+		<!-- <item name="android:textStyle">bold</item> -->
+		<item name="android:singleLine">true</item>
+	</style>
+	<!-- -->
+	<style name="btn_style">
+		<item name="android:background">@drawable/btn_bg</item>
+		<item name="android:textColor">#88FFFFFF</item>
+		<item name="android:layout_width">100dip</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textAppearance">
+			?android:attr/textAppearanceMedium
+		</item>
+	</style>
+	<style name="text_style_normal">
+		<item name="android:textSize">14dip</item>
+		<item name="android:textColor">#A0FFFFFF</item>
+	</style>
+	<!-- 15033505017 -->
+	<style name="user_item_style">
+		<item name="android:clickable">true</item>
+		<item name="android:background">
+			@android:drawable/list_selector_background
+		</item>
+		<item name="android:textSize">16.0dip</item>
+		<item name="android:padding">10dip</item>
+	</style>
+	<!-- -->
+	<style name="msg_textview_style">
+		<item name="android:textColor">#8FFFFFFF</item>
+		<item name="android:textSize">14dip</item>
+	</style>
+	<!-- admob -->
+	<style name="dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:background">#00000000</item>
+		<item name="android:windowBackground">@null</item>
+		<item name="android:backgroundDimEnabled">true</item>
+	</style>
+	<style name="Theme.FloatActivity" parent="android:style/Theme.Dialog" />
+	   <style name="theme_dialog_alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="chat_room_list_style">
+        <item name="android:cacheColorHint">#0000</item>
+        <item name="android:divider">@null</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:stackFromBottom">false</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+</resources>

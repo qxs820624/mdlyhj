@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:paddingTop="20dip" android:paddingBottom="20dip"
+	android:paddingLeft="12dip" android:paddingRight="12dip"
+	android:visibility="invisible" android:background="@drawable/tipbar_down_bg"
+	android:id="@+id/search_panel" android:layout_height="wrap_content">
+	<EditText android:id="@+id/et_search" android:layout_height="80dip"
+		android:inputType="none" android:layout_width="wrap_content"
+		android:layout_marginTop="2dip" android:layout_weight="1"
+		android:hint="@string/search_hint" android:gravity="fill_horizontal"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+	<Button android:text="@string/search_title" android:id="@+id/btn_search"
+		android:layout_gravity="right" android:layout_marginLeft="8dip"
+		android:background="@drawable/btn_bg" android:textColor="#FFFFFFFF"
+		android:layout_width="80dip" android:layout_height="76dip"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+</LinearLayout>

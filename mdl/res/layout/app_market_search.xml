@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/v_topest" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!-- -->
+	<include android:id="@+id/title_panel" layout="@layout/title_bar_market" />
+	<!-- -->
+	<LinearLayout android:id="@+id/search_input_panel"
+		android:paddingLeft="40dip" android:paddingRight="20dip"
+		android:paddingTop="10dip" android:paddingBottom="10dip"
+		android:layout_below="@id/title_panel" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/market_manage_downning_bg">
+		<EditText android:id="@+id/search_input"
+			android:layout_width="wrap_content" android:layout_height="30dip"
+			android:layout_weight="1" android:background="@drawable/search_input_bg" />
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="6dip"
+			android:background="@drawable/icon_search_background" />
+	</LinearLayout>
+	<!-- -->
+	<FrameLayout android:layout_alignParentBottom="true"
+		android:id="@+id/nav_panel" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<include layout="@layout/nav_bar_market" />
+	</FrameLayout>
+	<!-- -->
+	<RelativeLayout android:id="@+id/listview"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_below="@id/search_input_panel" android:layout_above="@id/nav_panel">
+		<ImageView android:src="@drawable/bg_bg"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true" />
+	</RelativeLayout>
+	<!-- -->
+	<FrameLayout android:layout_above="@id/nav_panel"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<include layout="@layout/optionmenu_popup" />
+	</FrameLayout>
+	<!-- 网络状态 -->
+	<ProgressBar android:id="@+id/progressImage"
+		android:visibility="gone" android:layout_centerInParent="true"
+		style="@android:style/Widget.ProgressBar.Inverse" mce_style="@android:style/Widget.ProgressBar.Inverse"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/v_topest"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!--  -->
+
+    <RelativeLayout
+        android:id="@+id/v_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+
+        <!--  -->
+
+        <FrameLayout
+            android:id="@+id/title_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/title_mcdonalds_bar" />
+        </FrameLayout>
+        <!--  -->
+
+        <LinearLayout
+            android:id="@+id/detail_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_panel"
+            android:background="@drawable/detail_bg"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前共计费:" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="￥0.0"
+                android:textColor="#cb0000"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="省￥0.0"
+                android:textColor="#cb0000"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_detail_background"
+                android:text="查看详情"
+                android:textColor="#cb0000" />
+        </LinearLayout>
+        <!--  -->
+
+        <FrameLayout
+            android:id="@+id/scroller_"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <include layout="@layout/ad_panel" />
+        </FrameLayout>
+        <!--  -->
+
+        <FrameLayout
+            android:id="@+id/nav_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/scroller_" >
+
+            <include layout="@layout/nav_mcdonalds_bar" />
+        </FrameLayout>
+        <!--  -->
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/nav_panel"
+            android:layout_below="@id/detail_panel"
+            android:scrollbarThumbVertical="@drawable/scroll_bar" >
+
+            <TableLayout
+                android:id="@+id/tableview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dip"
+                android:shrinkColumns="*"
+                android:stretchColumns="*" />
+        </ScrollView>
+        <!-- 网络状态 -->
+
+        <ProgressBar
+            android:id="@+id/progressImage"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            mce_style="@android:style/Widget.ProgressBar.Inverse" />
+        <!-- 刷新按钮 -->
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_reflesh_background"
+            android:visibility="gone" />
+        <!-- options menu -->
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/nav_panel" >
+
+            <include layout="@layout/optionmenu_popup" />
+        </FrameLayout>
+    </RelativeLayout>
+    <!--  -->
+
+    <include
+        android:id="@+id/flash_panel"
+        layout="@layout/flash_panel"
+         />
+
+</RelativeLayout>

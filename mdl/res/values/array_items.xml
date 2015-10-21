@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<array name="fav_list">
+		<item>养眼美图</item>
+		<item>图闻天下</item>
+		<item>最  小  说</item>
+		<item>靡靡之音</item>
+		<item>天天壁纸</item>
+	</array>
+	<array name="upload_btntext1">
+		<item>重选</item>
+		<item>上传</item>
+	</array>
+	<array name="upload_btntext2">
+		<item>重拍</item>
+		<item>上传</item>
+	</array>
+	<array name="save_date">
+		<item>永不保存</item>
+		<item>1天</item>
+		<item>7天(默认)</item>
+		<item>1个月</item>
+		<item>永久保存</item>
+	</array>
+	<array name="my_foto">
+		<item>查看相册</item>
+		<item>拍照上传</item>
+		<item>图片上传</item>
+		<item>选择文件</item>
+	</array>
+	<array name="setting_title">
+		<item>我的收藏</item>
+		<item>我的相册</item>
+		<item>讨   论   板</item>
+		<item>缓存时长设置</item>
+		<item>关闭自动隐藏功能</item>
+		<item>日日新团队</item>
+		<item>免责声明</item>
+		
+		<item>中国移动代理设置</item>
+		<!-- 
+		<item>允许使用营运商网络</item>
+		 -->
+
+	</array>
+	<array name="setting_desc">
+		<item>查看您收藏的所有内容</item>
+		<item>您可以将照片上传到您的空间，也可在线浏览您上传的照片</item>
+		<item>欢迎为日日新多提宝贵建议意见,我们每天都在进步</item>
+		<item>本地缓冲下载内容的时长，可以有效加快显示速度和减少流量</item>
+		<item>如果选中,则在阅读正文内容时,标题栏和底部菜单将不会自动隐藏</item>
+		<item>日日新始终坚持“苟日新，日日新，又日新”的宗旨为用户服务</item>
+		<item>之上述声明以及其解释权、修改权、更新权均属日日新软件</item>
+		
+
+		<item>如果选中则启用CMWAP代理</item>
+		<item>如果不选中,日日新只会使用WIFI网络 ,以免产生任何流量费用</item>
+		
+
+	</array>
+	<!-- View.GONE : 8 -->
+	<!-- View.VISIBLE : 0 -->
+	<array name="setting_more">
+		<item>0</item>
+		<item>0</item>
+		<item>0</item>
+		<item>0</item>
+		<item>8</item>
+		<item>0</item>
+		<item>0</item>
+		<!--  -->
+
+		<item>8</item>
+		<item>8</item>
+	</array>
+	<array name="setting_chk">
+		<item>8</item>
+		<item>8</item>
+		<item>8</item>
+		<item>8</item>
+		<item>0</item>
+		<item>8</item>
+		<item>8</item>
+		<!--  -->
+		<item>0</item>
+		<item>0</item>
+	</array>
+	<array name="setting_chkvalue">
+		<item>0</item>
+		<item>0</item>
+		<item>0</item>
+		<item>0</item>
+		<item>0</item>
+		<item>0</item>
+		<item>0</item>
+		<!--  -->
+		<item>0</item>
+		<item>0</item>
+	</array>
+</resources>

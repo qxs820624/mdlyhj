@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Gmusic</string>
+	<string name="company">成都慧思诚信息技术有限公司</string>
+	<string name="search_title">搜索</string>
+	<string name="fav_title">收藏夹</string>
+	<string name="message_title">站内消息</string>
+
+	<string name="verstr">版本:</string>
+	<string name="download_install_failed">安装失败，请重试!</string>
+	<string name="categorylist_title">Category List</string>
+	<string name="exit_tip">再按一次返回键,可退出软件!</string>
+	<string name="tel">产品、定制及商务合作：\nTel:(010)57467116\nMobile:18601100431
+	</string>
+	<string name="phone"></string>
+	<string name="websrc">来源: </string>
+	<string name="author">作者: </string>
+	<string name="music_time">时长: </string>
+	<string name="music_size">大小: </string>
+	<string name="wait">请稍候...</string>
+	<string name="btn_close_text">关闭</string>
+	<string name="update">升级...</string>
+	<string name="updatever">目前有新版，确认更新？</string>
+	<color name="tvColor">#FFFFFFFF</color>
+
+	<string name="menu_share">分享</string>
+	<string name="menu_comment">评论</string>
+	<string name="menu_more">更多</string>
+
+	<string name="no_empty_tip">输入不能为空!</string>
+	<string name="select_head_title">选择头像</string>
+	<string name="download_install">下载安装</string>
+
+	<string name="switch_user_title">更改用户</string>
+	<string name="login_title">用户登录</string>
+	<string name="reg_title">用户注册</string>
+	<string name="login_text">登 录</string>
+	<string name="reg_text">注 册</string>
+	<string name="update_name_title">更新昵称</string>
+	<string name="userspace_email">Email：</string>
+	<string name="userspace_email_hint">Email是您在日日新的身份标识</string>
+	<string name="email_empty">Email不能为空</string>
+	<string name="email_err_tip">Email输入无效,请重新输入</string>
+	<string name="userspace_pwd">密码：</string>
+	<string name="userspace_pwd_hint">6~10位数字、字母和下划线</string>
+	<string name="userspace_pwd_tip1">密码 不能为空！</string>
+	<string name="userspace_pwd_tip2">密码 必须是6~10位数字字母和下划线组成！</string>
+	<string name="userspace_name">昵称：</string>
+	<string name="userspace_name_hint">3~20位中英文字符</string>
+	<string name="userspace_name_tip1">昵称 不能为空！</string>
+	<string name="userspace_name_tip2">昵称 不能小于3或超过20个字符！</string>
+
+	<string name="submit_msg_tip">欢迎您的宝贵建议和意见!</string>
+
+	<string name="ok_text">Ok</string>
+	<string name="up_one_level">..</string>
+	<string name="current_dir">.</string>
+	<string name="cancel_text">Cancel</string>
+	<string name="alarm_text">Tip</string>
+	<string name="updir_text">Up</string>
+	<string name="cancel_tip">Input is not empty, are you sure you want to
+		cancel?</string>
+
+
+	<string name="op_success">操作成功</string>
+	<string name="op_failed">操作失败</string>
+	<string name="op_save">保存到</string>
+	<string name="op_clipboard_success">到剪贴板成功</string>
+	<!-- -->
+	<string name="upload_foto_title">upload photo</string>
+
+	<string name="photo_title_tip">Please input title...</string>
+	<string name="photo_title_default">no title</string>
+	<string name="photo_upload_success">upload success!</string>
+	<string name="photo_upload_failed">upload failed!</string>
+	<string name="photo_selected_nobitmap_tip">Is not a valid image file!</string>
+	<string name="photo_selected_dialog_title">sure to select this file?</string>
+	<string name="photo_nothing_tip">no uploaded photos</string>
+	<string name="phopt_app_select_tip">select photo</string>
+	<string name="select_file">select file:</string>
+	<string name="select_path">select path:</string>
+	<!-- -->
+
+	<string name="setting_change_tip">该设置将在下次运行时生效！</string>
+	<string name="ad_tip">NOTICE: Click ([c]) times, no adv any more!
+	</string>
+	<string name="installed">已安装</string>
+	<string name="downloaded">已下载</string>
+	<string name="install">安装</string>
+	<string name="download_text">下 载</string>
+	<string name="read_text">运 行</string>
+	<string name="vote_text">推 荐</string>
+	<string name="voted_text">已推荐</string>
+	<string name="fav_text">收 藏</string>
+	<string name="faved_text">已收藏</string>
+	<string name="downloading">正下载</string>
+
+	<string name="nickname_tip">还未设置您的昵称</string>
+	<string name="unemail_tip">EMail:</string>
+
+
+
+
+	<string name="my_setting_title">设置</string>
+	<string name="setting_skin">皮肤设置</string>
+	<string name="setting_skin_tip">选择你喜爱的皮肤</string>
+	<string name="setting_cachetime">缓存时长设置</string>
+	<string name="setting_cachetime_tip">本地缓冲下载内容的时长，可以有效加快显示速度和减少流量</string>
+	<string name="setting_autohide">关闭自动隐藏功能</string>
+	<string name="setting_autohide_tip">如果选中,则在阅读正文内容时,标题栏和底部菜单将不会自动隐藏</string>
+	<string name="setting_cmwap">中国移动代理设置</string>
+	<string name="setting_cmwap_tip">如果选中则启用CMWAP代理</string>
+	<string name="setting_mianze">免责声明</string>
+	<string name="setting_mianze_tip">之上述声明以及其解释权、修改权、更新权均属日日新软件</string>
+
+	<string name="foto_view">查看相册</string>
+	<string name="foto_camera">拍照上传</string>
+	<string name="foto_album">图片上传</string>
+	<string name="foto_file">选择文件上传</string>
+
+	<string name="reply_label">留言</string>
+	<string name="reply_hint_text">说两句...</string>
+	<string name="input_empty_tip">输入不能为空</string>
+	<string name="input_toolong_tip">输入不能超过200个字符!</string>
+
+	<string name="menu_text">菜单</string>
+	<string name="more_text">更多...</string>
+	<string name="tosub"><![CDATA[ >> ]]></string>
+	<string name="search_hint">输入需要查询的内容...</string>
+
+	<string name="user_input">设置登录帐号</string>
+	<string name="send_history">发布历史</string>
+	<string name="send_mblog_message">发布广播</string>
+	<string name="show_pwd_tip">明文显示密码</string>
+	<string name="sync_status_tip">选中则设置为可发布状态</string>
+	<string name="cannt_to_next">上次群发完成后，才能发送本次消息!</string>
+	<string name="login_hutuchong_failed">登录请求失败!</string>
+	<string name="send_hutuchong_failed">广播请求失败!</string>
+
+	<string name="login_reg_tip">在发言之前请先登录或注册！</string>
+	<string name="ondoubletap_tip">双击屏幕可切换全屏阅读!</string>
+
+	<string name="game_text">游 戏</string>
+	<string name="soft_text">应 用</string>
+	<string name="theme_text">主 题</string>
+	<string name="wallpaper_text">壁 纸</string>
+	<string name="book_text">电子书</string>
+	<string name="newest_text">最 新</string>
+
+	<string name="nav_all_text">全 部</string>
+	<string name="nav_menu_text">菜 单</string>
+	<string name="nav_filter_text">筛 选</string>
+	<string name="nav_map_text">周 边</string>
+	<string name="nav_more_text">更 多</string>
+
+	<string name="unread">未 读</string>
+	<string name="lastread">最后阅读:</string>
+
+	<string name="to_last_tip">已经到最后一条了,^.^</string>
+	<string name="to_first_tip">已经到第一条了,^.^</string>
+
+	<string name="back_text">返回</string>
+	<string name="readed_text">已读</string>
+	<string name="unread_text">未读</string>
+	<string name="send_message">发送</string>
+
+	<string name="menu_refresh">刷 新</string>
+	<string name="menu_about">关于</string>
+	<string name="menu_help">帮助</string>
+	<string name="menu_msg">建议</string>
+	<string name="menu_ver">版本更新</string>
+	<string name="menu_exit">退出</string>
+	<string name="menu_pic">有图模式</string>
+	<string name="menu_nopic">无图模式</string>
+	<string name="menu_moreapp">更多</string>
+	<string name="menu_clear">清理缓存</string>
+
+	<string name="btn_ok">确 定</string>
+	<string name="btn_cancel">取 消</string>
+
+	<string name="vercheck_failed_tip">新版本检测失败，请稍候重试！</string>
+	<string name="menu_clear_finished">缓存清理完成!</string>
+	
+	<string name="fragment_title_music_list">音乐列表</string>
+    <string name="fragment_title_music_player">正在播放</string>
+    <string name="key_back_press_exit_note">再按一次退出程序</string>
+    <string name="notice_playing">正在播放</string>
+</resources>

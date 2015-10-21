@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/menu_item" android:layout_width="fill_parent"
+	android:gravity="center"
+	android:layout_height="fill_parent">
+	<ImageView android:id="@+id/item_menu_divider" android:src="@drawable/selection_menu_divider"
+		android:layout_gravity="left" android:scaleType="fitXY"
+		android:layout_width="wrap_content" android:layout_height="fill_parent" />
+	<RelativeLayout android:id="@+id/menu_grid_item_icontext"
+		android:layout_width="fill_parent" android:layout_height="45dip"
+		android:gravity="center">
+		<ImageView android:id="@+id/item_menu_icon"
+			android:layout_width="wrap_content" android:layout_centerVertical="true"
+			android:layout_height="wrap_content" />
+		<TextView android:id="@+id/item_menu_text" style="@style/nav_text_style"
+			android:layout_toRightOf="@id/item_menu_icon"
+			android:layout_centerInParent="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</RelativeLayout>
+</LinearLayout>

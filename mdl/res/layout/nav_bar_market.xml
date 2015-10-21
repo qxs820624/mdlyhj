@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/nav_panel" android:layout_width="fill_parent"
+	android:background="@drawable/nav_bar_bg" android:layout_height="wrap_content"
+	android:gravity="center_vertical">
+	<!-- 游戏 -->
+	<LinearLayout android:id="@+id/nav_tab_1"
+		android:layout_width="wrap_content" android:orientation="vertical"
+		android:layout_weight="1" android:clickable="true" android:background="@drawable/nav_background"
+		android:gravity="center" android:layout_height="fill_parent">
+		<ImageView android:id="@+id/nav_icon" android:src="@drawable/icon_game_normal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/nav_text" android:text="@string/game_text"
+			style="@style/nav_text_style" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+	</LinearLayout>
+	<!-- 应用 -->
+	<LinearLayout android:id="@+id/nav_tab_2"
+		android:layout_width="wrap_content" android:orientation="vertical"
+		android:layout_weight="1" android:clickable="true" android:background="@drawable/nav_background"
+		android:gravity="center" android:layout_height="fill_parent">
+		<ImageView android:id="@+id/nav_icon" android:src="@drawable/icon_app_normal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/nav_text" android:text="@string/soft_text"
+			style="@style/nav_text_style" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+	</LinearLayout>
+	<!-- 主题 -->
+	<LinearLayout android:id="@+id/nav_tab_3"
+		android:layout_width="wrap_content" android:orientation="vertical"
+		android:layout_weight="1" android:clickable="true" android:background="@drawable/nav_background"
+		android:gravity="center" android:layout_height="fill_parent">
+		<ImageView android:id="@+id/nav_icon" android:src="@drawable/icon_theme_normal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/nav_text" android:text="@string/theme_text"
+			style="@style/nav_text_style" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+	</LinearLayout>
+	<!-- 壁纸 -->
+	<LinearLayout android:id="@+id/nav_tab_4"
+		android:layout_width="wrap_content" android:orientation="vertical"
+		android:layout_weight="1" android:clickable="true" android:background="@drawable/nav_background"
+		android:gravity="center" android:layout_height="fill_parent">
+		<ImageView android:id="@+id/nav_icon" android:src="@drawable/icon_wallpaper_normal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/nav_text" android:text="@string/wallpaper_text"
+			style="@style/nav_text_style" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+	</LinearLayout>
+	<!-- 电子书 -->
+	<LinearLayout android:id="@+id/nav_tab_5"
+		android:layout_width="wrap_content" android:orientation="vertical"
+		android:layout_weight="1" android:clickable="true" android:background="@drawable/nav_background"
+		android:gravity="center" android:layout_height="fill_parent">
+		<ImageView android:id="@+id/nav_icon" android:src="@drawable/icon_book_normal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/nav_text" android:text="@string/book_text"
+			style="@style/nav_text_style" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+	</LinearLayout>
+</LinearLayout>

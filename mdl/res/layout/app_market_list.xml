@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/v_topest" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout android:id="@+id/v_page"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<!-- -->
+		<include android:id="@+id/title_panel" layout="@layout/title_bar_market" />
+		<!-- -->
+		<LinearLayout android:id="@+id/tab_panel"
+			android:layout_below="@id/title_panel" android:background="@drawable/tab_bg"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="bottom">
+			<Button android:id="@+id/btn_tab_1" android:background="@drawable/tab_background"
+				android:layout_weight="1" android:text="最新上架" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:layout_marginLeft="6dip" />
+			<Button android:id="@+id/btn_tab_2" android:background="@drawable/tab_background"
+				android:layout_weight="1" android:text="下载排行" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" />
+			<Button android:id="@+id/btn_tab_3" android:background="@drawable/tab_background"
+				android:layout_weight="1" android:text="精品推荐" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:layout_marginRight="6dip" />
+		</LinearLayout>
+		<!-- -->
+		<FrameLayout android:layout_alignParentBottom="true"
+			android:id="@+id/nav_panel" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<include layout="@layout/nav_bar_market" />
+		</FrameLayout>
+		<!-- -->
+		<ListView android:id="@+id/listview" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_below="@id/tab_panel"
+			android:listSelector="@drawable/list_item_focused"
+			android:layout_above="@id/nav_panel" />
+		<!-- -->
+		<FrameLayout android:layout_above="@id/nav_panel"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<include layout="@layout/optionmenu_popup" />
+		</FrameLayout>
+		<!-- 网络状态 -->
+		<ProgressBar android:id="@+id/progressImage"
+			android:layout_centerInParent="true"
+			style="@android:style/Widget.ProgressBar.Inverse" mce_style="@android:style/Widget.ProgressBar.Inverse"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</RelativeLayout>
+</RelativeLayout>
