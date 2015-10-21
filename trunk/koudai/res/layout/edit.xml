@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.chuangyu.music"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/edit_tile_background">
+	<!-- -->
+	<include android:id="@+id/header_panel" layout="@layout/include_header" />
+	<!-- 导航栏背景 -->
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="109px" android:layout_alignParentBottom="true"
+		android:background="@drawable/edit_nav_bg" android:gravity="center_vertical">
+	</LinearLayout>
+	<LinearLayout android:id="@+id/nav_panel"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+		<TextView android:id="@+id/btn_edit" android:layout_width="100px"
+			android:layout_height="109px" android:textSize="22px"
+			android:textColor="#A0FFFFFF" android:background="@drawable/edit_nav_selected"
+			android:text="编 辑" android:gravity="center_horizontal"
+			android:clickable="true" android:layout_marginTop="12px" />
+		<TextView android:id="@+id/btn_edge" android:layout_width="100px"
+			android:layout_height="109px" android:textSize="22px"
+			android:textColor="#A0FFFFFF" android:background="@drawable/edit_nav_background"
+			android:text="边 框" android:gravity="center_horizontal"
+			android:clickable="true" android:layout_marginTop="12px" />
+		<TextView android:id="@+id/btn_combine" android:layout_width="100px"
+			android:layout_height="109px" android:textSize="22px"
+			android:textColor="#A0FFFFFF" android:background="@drawable/edit_nav_background"
+			android:text="拼 接" android:gravity="center_horizontal"
+			android:clickable="true" android:layout_marginTop="12px" />
+	</LinearLayout>
+	<!-- 编辑面板 -->
+	<LinearLayout android:id="@+id/edit_menu_panel"
+		android:layout_width="fill_parent" android:layout_height="63px"
+		android:layout_alignParentBottom="true" android:gravity="center_vertical">
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_left"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/edit_item_left" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_right"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/edit_item_right" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_cut"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/edit_item_cut" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_del"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/edit_item_del" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+	</LinearLayout>
+	<!-- 边框面板 -->
+	<LinearLayout android:id="@+id/edge_menu_panel"
+		android:visibility="gone" android:layout_width="fill_parent"
+		android:layout_height="63px" android:layout_alignParentBottom="true"
+		android:gravity="center_vertical">
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_edge_1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/edge_1_icon" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_edge_2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/edge_2_icon" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_edge_3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/edge_3_icon" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_edge_4"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/edge_4_icon" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_edge_5"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/edge_5_icon" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_edge_6"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/edge_6_icon" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+	</LinearLayout>
+	<!-- 拼接面板 -->
+	<LinearLayout android:id="@+id/combine_menu_panel"
+		android:visibility="gone" android:layout_width="fill_parent"
+		android:layout_height="63px" android:layout_alignParentBottom="true"
+		android:gravity="center_vertical">
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_combine_1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/combine_icon_1" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_combine_2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/combine_icon_2" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_combine_3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/combine_icon_3" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_combine_4"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/combine_icon_4" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_combine_5"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/combine_icon_5" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btn_combine_6"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/combine_icon_6" android:background="@drawable/edit_item_background" />
+		<View android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+	</LinearLayout>
+	<!--图片 -->
+	<cn.duome.fotoshare.mtouch.TouchImageView
+		android:id="@+id/zoom_view" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@id/header_panel"
+		android:layout_above="@+id/nav_panel" android:scaleType="matrix"
+		android:focusable="false" android:adjustViewBounds="true" />
+</RelativeLayout>

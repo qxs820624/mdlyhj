@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.chuangyu.music"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<!-- 皮肤栏 -->
+	<include layout="@layout/include_bg_skin" />
+	<!-- 标题栏 -->
+	<include android:id="@+id/header_panel" layout="@layout/include_header" />
+	<!-- -->
+	<LinearLayout android:layout_below="@id/header_panel"
+		android:background="@drawable/content_background"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_margin="40px" android:orientation="vertical"
+		android:paddingLeft="20px" android:paddingRight="20px"
+		android:paddingBottom="20px" android:paddingTop="40px">
+		<!-- 昵称 -->
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="20px"
+			android:layout_marginRight="20px" android:text="@string/nick_tip"
+			android:textColor="#FF000000" 
+			android:visibility="gone"/>
+		<EditText android:id="@+id/et_nick" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="@string/nick"
+			android:background="@drawable/edit_input_background"
+			android:layout_marginBottom="20px" android:layout_marginLeft="20px"
+			android:layout_marginRight="20px" 
+			android:inputType="textPersonName"/>
+		<!-- email -->
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="20px"
+			android:layout_marginRight="20px" android:text="@string/email_tip"
+			android:textColor="#FF000000" 
+			android:visibility="gone"/>
+		<EditText android:id="@+id/et_email" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="@string/email"
+			android:background="@drawable/edit_input_background"
+			android:layout_marginBottom="20px" android:layout_marginLeft="20px"
+			android:layout_marginRight="20px" 
+			android:inputType="textEmailAddress"/>
+		<!-- 第一次密码 -->
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="20px"
+			android:layout_marginRight="20px" android:text="@string/pwd_tip"
+			android:textColor="#FF000000" 
+			android:visibility="gone"/>
+		<EditText android:id="@+id/et_pwd"  android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="@string/password"
+			android:background="@drawable/edit_input_background"
+			android:layout_marginBottom="40px" android:layout_marginLeft="20px"
+			android:layout_marginRight="20px" 
+			android:inputType="textPassword"/>
+		<!-- 注册按钮 -->
+		<Button android:id="@+id/btn_register" android:layout_width="100px"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:text="@string/register" android:background="@drawable/btn_background" 
+			android:textColor="#FF000000"/>
+
+	</LinearLayout>
+	<!-- 刷新按钮 -->
+	<Button android:id="@+id/btn_refresh"
+		android:layout_centerInParent="true" android:visibility="gone"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<!-- 网络状态 -->
+	<ProgressBar android:id="@+id/progressImage"
+		android:layout_centerInParent="true" android:visibility="gone"
+		style="@android:style/Widget.ProgressBar.Inverse" mce_style="@android:style/Widget.ProgressBar.Inverse"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<!-- 请求进度 -->
+	<TextView android:id="@+id/progressText" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:visibility="gone" />
+</RelativeLayout>

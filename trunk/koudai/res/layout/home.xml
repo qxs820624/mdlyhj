@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.chuangyu.music"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 图片列表栏 -->
+
+    <cn.duome.fotoshare.view.FlowScrollView
+        android:id="@+id/waterfall_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header_panel"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/waterfall_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </LinearLayout>
+    </cn.duome.fotoshare.view.FlowScrollView>
+
+    <!-- 刷新按钮 -->
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    <!-- 网络状态 -->
+
+    <ProgressBar
+        android:id="@+id/progressImage"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        mce_style="@android:style/Widget.ProgressBar.Inverse" />
+    <!-- 请求进度 -->
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
