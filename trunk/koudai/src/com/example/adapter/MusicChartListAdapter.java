@@ -65,7 +65,7 @@ public class MusicChartListAdapter extends BaseAdapter {
 		}
 
 		viewHolder.musicNameTextView.setText(cinfo.getChartName());
-		viewHolder.musicIconImageView.setImageResource(icon[position]);
+		//viewHolder.musicIconImageView.setImageResource(icon[position]);
 		return convertView;
 	}
 
