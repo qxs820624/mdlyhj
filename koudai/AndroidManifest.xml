@@ -21,12 +21,16 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
+        android:name="com.chuangyu.music.DmApplication"
         android:debuggable="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name" >
         <meta-data
-            android:name="appid"
-            android:value="appid:001421382175750449" />
+            android:name="miguopen_appid"
+            android:value="appid:002049699205212445" />
+        <meta-data
+            android:name="excode"
+            android:value="excode:0001" />
 
         <activity
             android:name="cn.duome.fotoshare.FlashActivity"
@@ -131,9 +135,17 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
-        <activity android:name="com.cmsc.cmmusic.common.CMMusicActivity" />
-        
-        <meta-data android:name="excode" android:value="excode:014A139"/>
+        <activity android:name="com.cmsc.cmmusic.common.CMMusicActivity" >
+        </activity>
+
+        <service
+            android:name="com.cmsc.cmmusic.common.MediaService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.android.sitech.ttpod.media.MEDIASERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name="com.migu.sdk.service.MiguSdkService" />
     </application>
 
     <uses-sdk android:minSdkVersion="5" />
