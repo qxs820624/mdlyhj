@@ -13,7 +13,6 @@ import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.util.Log;
 
-import com.cmsc.cmmusic.init.GetAppInfo;
 import com.cmsc.cmmusic.init.GetAppInfoInterface;
 
 public class GetPublicKey {

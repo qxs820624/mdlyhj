@@ -189,9 +189,8 @@ public class MusicChartListActivity extends Activity {
 		cpinfoHandler.sendEmptyMessage(ConstantsMusic.HANDLER_SHOW_PROGRESS);
 
 		ChartListRsp c = MusicQueryInterface.getChartInfo(
-				MusicChartListActivity.this, 1, 10);
+				getApplicationContext(), 1, 30);
 		list = c.getChartInfos();
-		System.out.println("list:" + list);
 		cpinfoHandler.sendEmptyMessage(ConstantsMusic.HANDLER_CANCEL_PROGRESS);
 		cpinfoHandler.post(new Runnable() {
 
