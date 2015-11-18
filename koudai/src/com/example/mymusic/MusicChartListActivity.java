@@ -23,9 +23,12 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.chuangyu.music.R;
+import com.cmsc.cmmusic.common.CMMusicCallback;
+import com.cmsc.cmmusic.common.CPManagerInterface;
 import com.cmsc.cmmusic.common.MusicQueryInterface;
 import com.cmsc.cmmusic.common.data.ChartInfo;
 import com.cmsc.cmmusic.common.data.ChartListRsp;
+import com.cmsc.cmmusic.common.data.Result;
 import com.cmsc.cmmusic.init.InitCmmInterface;
 import com.example.adapter.MusicChartListAdapter;
 import com.example.constants.ConstantsMusic;
@@ -41,6 +44,7 @@ public class MusicChartListActivity extends Activity {
 			R.drawable.icon_cailing, R.drawable.icon_yinyue };
 	private UIHandler mUIHandler = new UIHandler();
 	Hashtable<String, String> initResult = new Hashtable<String, String>();
+	ArrayList<ChartInfo> newlist = new ArrayList<ChartInfo>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -51,12 +55,12 @@ public class MusicChartListActivity extends Activity {
 		dialog.setContentView(R.layout.dialog_layout);
 		chartListView = (ListView) findViewById(R.id.chart_listview);
 		backBtn = (ImageButton) findViewById(R.id.chart_list_back_imagebutton);
-		
+
 		InitCmmInterface.initSDK(MusicChartListActivity.this);
 		if (!InitCmmInterface.initCheck(getApplicationContext())) {
 			new Thread(new T1()).start();
 		} else {
-			Toast.makeText(getApplicationContext(),  "已经成功初始化数据", 0).show();
+			Toast.makeText(getApplicationContext(), "已经成功初始化数据", 0).show();
 		}
 
 		mThread = new MusicListTread();
@@ -80,13 +84,30 @@ public class MusicChartListActivity extends Activity {
 				// }
 				// }.start();
 				if (mAdapter.list.size() > 0) {
-					Intent intent = new Intent(getApplicationContext(),
-							MusicNameListActivity.class);
-					intent.putExtra("chartcode", mAdapter.list.get(position)
-							.getChartCode());
-					intent.putExtra("chartname", mAdapter.list.get(position)
-							.getChartName());
-					startActivity(intent);
+					if (position == 0) {
+						CPManagerInterface.openCPMonth(getApplicationContext(),
+								"600967020000006112",
+								new CMMusicCallback<Result>() {
+
+									@Override
+									public void operationResult(Result arg0) {
+										// TODO Auto-generated method stub
+										if (null != arg0) {
+											Toast.makeText(
+													getApplicationContext(),
+													arg0.getResMsg(), 0).show();
+										}
+									}
+								});
+					} else {
+						Intent intent = new Intent(getApplicationContext(),
+								MusicNameListActivity.class);
+						intent.putExtra("chartcode", mAdapter.list
+								.get(position).getChartCode());
+						intent.putExtra("chartname", mAdapter.list
+								.get(position).getChartName());
+						startActivity(intent);
+					}
 				}
 			}
 		});
@@ -126,13 +147,13 @@ public class MusicChartListActivity extends Activity {
 			switch (msg.what) {
 			case 0:
 				if (msg.obj == null) {
-					Toast.makeText(getApplicationContext(),  "初始化失败", 0).show();
+					Toast.makeText(getApplicationContext(), "初始化失败", 0).show();
 					return;
 				}
 				System.out.println(initResult);
 				if (null != initResult) {
 					Toast.makeText(getApplicationContext(),
-							initResult.get("desc").toString(),0).show();
+							initResult.get("desc").toString(), 0).show();
 				}
 				break;
 			}
@@ -183,6 +204,13 @@ public class MusicChartListActivity extends Activity {
 		if (c == null)
 			return;
 		list = c.getChartInfos();
+		ChartInfo cinfo = new ChartInfo();
+		cinfo.setChartName("铃声悦动包");
+		newlist.add(cinfo);
+		for (int i = 0; i < list.size(); i++) {
+			newlist.add(list.get(i));
+		}
+
 		cpinfoHandler.sendEmptyMessage(ConstantsMusic.HANDLER_CANCEL_PROGRESS);
 		cpinfoHandler.post(new Runnable() {
 
@@ -191,7 +219,7 @@ public class MusicChartListActivity extends Activity {
 				try {
 
 					mAdapter = new MusicChartListAdapter(
-							MusicChartListActivity.this, list, iconarray);
+							MusicChartListActivity.this, newlist, iconarray);
 					chartListView.setAdapter(mAdapter);
 					mThread.stopThread(false);
 
