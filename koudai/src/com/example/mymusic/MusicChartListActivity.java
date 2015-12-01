@@ -99,6 +99,13 @@ public class MusicChartListActivity extends Activity {
 										}
 									}
 								});
+					} else if (position == 1) {
+						Intent intent = new Intent(getApplicationContext(),
+								MusicNameListActivity.class);
+						intent.putExtra("chartcode", "");
+						intent.putExtra("chartname", "铃声悦动包详情");
+						intent.putExtra("chartlocal", "1");//1为本地音乐列表
+						startActivity(intent);
 					} else {
 						Intent intent = new Intent(getApplicationContext(),
 								MusicNameListActivity.class);
@@ -106,6 +113,7 @@ public class MusicChartListActivity extends Activity {
 								.get(position).getChartCode());
 						intent.putExtra("chartname", mAdapter.list
 								.get(position).getChartName());
+						intent.putExtra("chartlocal", "0");
 						startActivity(intent);
 					}
 				}
@@ -206,7 +214,10 @@ public class MusicChartListActivity extends Activity {
 		list = c.getChartInfos();
 		ChartInfo cinfo = new ChartInfo();
 		cinfo.setChartName("铃声悦动包");
+		ChartInfo cinfo2 = new ChartInfo();
+		cinfo2.setChartName("铃声悦动包详情");
 		newlist.add(cinfo);
+		newlist.add(cinfo2);
 		for (int i = 0; i < list.size(); i++) {
 			newlist.add(list.get(i));
 		}
