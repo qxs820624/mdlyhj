@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -13,11 +15,12 @@ import android.widget.TextView;
 import cn.duome.http.DownLoad;
 
 import com.chuangyu.music.R;
-
 import com.cmsc.cmmusic.common.CMMusicCallback;
 import com.cmsc.cmmusic.common.FullSongManagerInterface;
+import com.cmsc.cmmusic.common.MusicQueryInterface;
 import com.cmsc.cmmusic.common.RingbackManagerInterface;
 import com.cmsc.cmmusic.common.data.DownloadResult;
+import com.cmsc.cmmusic.common.data.MusicInfoResult;
 import com.cmsc.cmmusic.common.data.Result;
 import com.example.musicutil.Player;
 
@@ -39,6 +42,8 @@ public class PlayMusicActivity extends Activity {
 	String crbtListenDir = "";
 	String singerName = "";
 	String price = "";
+	String local = "";
+	String downid = "";
 	private Player player;
 
 	@Override
@@ -53,6 +58,8 @@ public class PlayMusicActivity extends Activity {
 		crbtListenDir = intent.getStringExtra("crbtListenDir");
 		singerName = intent.getStringExtra("singerName");
 		price = intent.getStringExtra("price");
+		local = intent.getStringExtra("local");
+		downid = intent.getStringExtra("downid");
 
 		tvMusicTitle = (TextView) findViewById(R.id.tv_music_title);
 		tvArtist = (TextView) findViewById(R.id.tv_artist);
@@ -65,11 +72,32 @@ public class PlayMusicActivity extends Activity {
 		backBtn = (ImageButton) findViewById(R.id.play_back_imagebutton);
 		buyBtn = (Button) findViewById(R.id.btn_buy);
 		downBtn = (Button) findViewById(R.id.btn_down);
+
+		if ("1".equals(local)) {
+			new Thread() {
+				@Override
+				public void run() {
+					super.run();
+					MusicInfoResult result = MusicQueryInterface
+							.getMusicInfoByMusicId(PlayMusicActivity.this,
+									musicId);
+					songName = result.getMusicInfo().getSongName();
+					singerName = result.getMusicInfo().getSingerName();
+					price = result.getMusicInfo().getPrice();
+					crbtListenDir = result.getMusicInfo().getCrbtListenDir();
+
+					mUIHandler.obtainMessage(0, result).sendToTarget();
+				}
+			}.start();
+		} else {
+			player = new Player(crbtListenDir, sbProgress, tvCurrentTime,
+					tvDuration);
+			player.play();
+		}
+
 		tvMusicTitle.setText(songName);
 		tvArtist.setText(singerName);
-		player = new Player(crbtListenDir, sbProgress, tvCurrentTime,
-				tvDuration);
-		player.play();
+
 		btnPlayOrPasue.setBackgroundResource(R.drawable.player_btn_pause_style);
 
 		btnPlayOrPasue.setOnClickListener(new ClickEvent());
@@ -80,27 +108,55 @@ public class PlayMusicActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				FullSongManagerInterface.getFullSongDownloadUrl(
-						PlayMusicActivity.this, musicId,
-						new CMMusicCallback<DownloadResult>() {
-							@Override
-							public void operationResult(
-									final DownloadResult downloadResult) {
-								if (null != downloadResult) {
-									DownLoad.downLoad(PlayMusicActivity.this,
-											downloadResult.getDownUrl(),
-											songName + ".mp3");
-									// new AlertDialog.Builder(
-									// PlayMusicActivity.this)
-									// .setTitle("下载：" + songName)
-									// .setMessage(
-									// downloadResult.toString())
-									// .setPositiveButton("确认", null)
-									// .show();
-								}
+				if ("1".equals(local)) {
+					System.out.println("下载歌曲downid：" + downid);
+					FullSongManagerInterface.getFullSongDownloadUrl(
+							PlayMusicActivity.this, downid,
+							new CMMusicCallback<DownloadResult>() {
+								@Override
+								public void operationResult(
+										final DownloadResult downloadResult) {
+									if (null != downloadResult) {
+										DownLoad.downLoad(PlayMusicActivity.this,
+												downloadResult.getDownUrl(),
+												songName + ".mp3");
+										// new AlertDialog.Builder(
+										// PlayMusicActivity.this)
+										// .setTitle("下载：" + songName)
+										// .setMessage(
+										// downloadResult.toString())
+										// .setPositiveButton("确认", null)
+										// .show();
+									}
 
-							}
-						});
+								}
+							});
+				} else {
+					System.out.println("下载歌曲musicId：" + musicId);
+					FullSongManagerInterface.getFullSongDownloadUrl(
+							PlayMusicActivity.this, musicId,
+							new CMMusicCallback<DownloadResult>() {
+								@Override
+								public void operationResult(
+										final DownloadResult downloadResult) {
+									if (null != downloadResult) {
+										DownLoad.downLoad(
+												PlayMusicActivity.this,
+												downloadResult.getDownUrl(),
+												songName + ".mp3");
+										// new AlertDialog.Builder(
+										// PlayMusicActivity.this)
+										// .setTitle("下载：" + songName)
+										// .setMessage(
+										// downloadResult.toString())
+										// .setPositiveButton("确认", null)
+										// .show();
+									}
+
+								}
+							});
+				}
+
 			}
 		});
 
@@ -133,6 +189,28 @@ public class PlayMusicActivity extends Activity {
 				finish();
 			}
 		});
+	}
+
+	private UIHandler mUIHandler = new UIHandler();
+
+	private class UIHandler extends Handler {
+		@Override
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+
+			switch (msg.what) {
+			case 0:
+				if (msg.obj == null) {
+
+					return;
+				}
+				player = new Player(crbtListenDir, sbProgress, tvCurrentTime,
+						tvDuration);
+				player.play();
+				break;
+			}
+
+		}
 	}
 
 	class ClickEvent implements OnClickListener {
